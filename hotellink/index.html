@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Link</title>
+    <style>
+        *,body{
+            margin:0;
+            padding:0;
+        }
+        img{
+            width: 100%;
+        }
+        @media only screen and (min-width: 320px){
+            .desktop_config img{
+                display: none;
+            }
+            .mobile_config img{
+                display: block;
+            }
+        }
+        @media only screen and (min-width: 768px){
+            .desktop_config img{
+                display: block;
+            }
+            .mobile_config img{
+                display: none;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="desktop_config">
+        <img src="destop-image.jpg" alt="Case study image">
+    </div>
+    <div class="mobile_config">
+        <img src="mobile-image.jpg" alt="Case study image">
+    </div>
+</body>
+</html>
