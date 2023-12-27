@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="mobile-only darkmode">
+    <!-- page header -->
+    <div class="page-header">
+        <h4>
+            <a href="#!">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.70229 11.3312C4.26284 11.7706 4.26284 12.4843 4.70229 12.9237L10.3273 18.5487C10.7667 18.9882 11.4804 18.9882 11.9199 18.5487C12.3593 18.1093 12.3593 17.3956 11.9199 16.9562L8.21089 13.2507L18.9968 13.2507C19.6191 13.2507 20.1218 12.7479 20.1218 12.1257C20.1218 11.5034 19.6191 11.0007 18.9968 11.0007L8.2144 11.0007L11.9164 7.29521C12.3558 6.85576 12.3558 6.14209 11.9164 5.70264C11.4769 5.26318 10.7632 5.26318 10.3238 5.70264L4.69878 11.3276L4.70229 11.3312Z"
+                        fill="#F7F7FA" />
+                </svg>
+            </a>
+            SK Leagues mùa 4
+        </h4>
+        <div class="function">
+            <a href="#!" class="function-search">
+                <div class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.0006 10.5003C17.0006 11.9348 16.535 13.2598 15.7506 14.3349L19.707 18.2944C20.0977 18.6851 20.0977 19.3195 19.707 19.7101C19.3164 20.1008 18.682 20.1008 18.2913 19.7101L14.3349 15.7506C13.2598 16.5381 11.9348 17.0006 10.5003 17.0006C6.90952 17.0006 4 14.0911 4 10.5003C4 6.90952 6.90952 4 10.5003 4C14.0911 4 17.0006 6.90952 17.0006 10.5003ZM10.5003 15.0005C11.0913 15.0005 11.6765 14.8841 12.2225 14.658C12.7685 14.4318 13.2646 14.1003 13.6825 13.6825C14.1003 13.2646 14.4318 12.7685 14.658 12.2225C14.8841 11.6765 15.0005 11.0913 15.0005 10.5003C15.0005 9.90934 14.8841 9.32415 14.658 8.77816C14.4318 8.23217 14.1003 7.73607 13.6825 7.31818C13.2646 6.9003 12.7685 6.56881 12.2225 6.34266C11.6765 6.1165 11.0913 6.0001 10.5003 6.0001C9.90934 6.0001 9.32415 6.1165 8.77816 6.34266C8.23217 6.56881 7.73607 6.9003 7.31818 7.31818C6.9003 7.73607 6.56881 8.23217 6.34266 8.77816C6.1165 9.32415 6.0001 9.90934 6.0001 10.5003C6.0001 11.0913 6.1165 11.6765 6.34266 12.2225C6.56881 12.7685 6.9003 13.2646 7.31818 13.6825C7.73607 14.1003 8.23217 14.4318 8.77816 14.658C9.32415 14.8841 9.90934 15.0005 10.5003 15.0005Z"
+                            fill="#F7F7FA" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Chi tiết Giải đấu -->
+    <div class="chitiet-muagiai">
+        <div class="container">
+            <!-- Thông tin chi tiết giải đấu -->
+            <div class="infor-list">
+                <div class="infor">
+                    <p class="label">
+                        Số đội tham gia
+                    </p>
+                    <div class="content">
+                        <span>4</span>
+                    </div>
+                </div>
+                <div class="infor">
+                    <p class="label">
+                        Số vòng đấu
+                    </p>
+                    <div class="content">
+                        <span>12</span>
+                    </div>
+                </div>
+                <div class="infor">
+                    <p class="label">
+                        Địa điểm tổ chức
+                    </p>
+                    <div class="content">
+                        <span>Bình Thạnh Sport Park</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="action-group">
+                <a class="button button-outline" href="#!">Chỉnh sửa thông tin</a>
+            </div>
+        </div>
+    </div>
+    <!-- Thông tin chi tiết -->
+    <div class="thongtin-chitiet-muagiai">
+       <div class="content-container">
+            <div class="tabs-control">
+                <div class="tab active" onclick="chitietmuagiai('thongtin')">Thông tin</div>
+                <div class="tab" onclick="chitietmuagiai('bangxephang')">Bảng xếp hạng</div>
+                <div class="tab" onclick="chitietmuagiai('bantochuc')">Ban tổ chức</div>
+                <div class="tab" onclick="chitietmuagiai('lichthidau')">Lịch thi đấu</div>
+            </div>
+            <div class="tabs-content">
+                <div id="thongtin" class="tabs-content-item">
+                    <div class="countdown">
+                        <div class="countdown-header">
+                            <h6>THỜI GIAN MÙA GIẢI BẮT ĐẦU</h6>
+                        </div>
+                        <div class="countdown-body">
+                            <div class="time">
+                                <h3>20</h3>
+                                <span>ngày</span>
+                            </div>
+                            <div class="dot">
+                                <h3>:</h3>
+                            </div>
+                            <div class="time">
+                                <h3>12</h3>
+                                <span>giờ</span>
+                            </div>
+                            <div class="dot">
+                                <h3>:</h3>
+                            </div>
+                            <div class="time">
+                                <h3>30</h3>
+                                <span>phút</span>
+                            </div>
+                            <div class="dot">
+                                <h3>:</h3>
+                            </div>
+                            <div class="time">
+                                <h3>20</h3>
+                                <span>giây</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div id="bangxephang" class="tabs-content-item" style="display:none">
+                   <!-- empty -->
+                    <div class="empty-state">
+                        <img src="../assets/images/Empty.png" alt="">
+                        <p>Chưa có dữ liệu</p>
+                    </div>
+                </div>
+                    
+                <div id="bantochuc" class="tabs-content-item" style="display:none">
+                    <!-- Thông tin ban tổ chức -->
+                    <div class="thongtin-bantochuc">
+                        <!-- item -->
+                        <div class="item">
+                            <div class="item-header">
+                                <p>TRƯỞNG BAN TỔ CHỨC</p>
+                                <div class="function">
+                                    <a href="#!" class="edit open-bottom-sheet-edit-bantochuc">Chỉnh sửa</a>
+                                </div>
+                            </div>
+                            <div class="item-body">
+                                <div class="infor-list">
+                                    <div class="infor">
+                                        <p class="label">Họ tên</p>
+                                        <p class="content">Trần Trung Hiếu</p>
+                                    </div>
+                                    <div class="infor">
+                                        <p class="label">Email</p>
+                                        <p class="content">trunghieu@aleagues.com</p>
+                                    </div>
+                                    <div class="infor">
+                                        <p class="label">Số điện thoại</p>
+                                        <p class="content">0123456789</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- item -->
+                         <div class="item">
+                            <div class="item-header">
+                                <p>TRỢ LÝ GIẢI</p>
+                                <div class="function">
+                                    <a href="#!" class="edit open-bottom-sheet-edit-bantochuc">Chỉnh sửa</a>
+                                </div>
+                            </div>
+                            <div class="item-body">
+                                <div class="infor-list">
+                                    <div class="infor">
+                                        <p class="label">Họ tên</p>
+                                        <p class="content">Trần Trung Hiếu</p>
+                                    </div>
+                                    <div class="infor">
+                                        <p class="label">Email</p>
+                                        <p class="content">trunghieu@aleagues.com</p>
+                                    </div>
+                                    <div class="infor">
+                                        <p class="label">Số điện thoại</p>
+                                        <p class="content">0123456789</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lichthidau" class="tabs-content-item" style="display:none">
+                    <!-- Lịch thi đấu -->
+                    <div class="lichthidau">
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="item-header">
+                                <h6>Vòng 1</h6>
+                            </div>
+                            <div class="item-body">
+                                <!-- empty -->
+                                <div class="empty-state">
+                                    <img src="../assets/images/Empty.png" alt="">
+                                    <p>Chưa có dữ liệu trận đấu</p>
+                                    <a class="button button-primary icon-left"  href="taolichthidauvong.html">
+                                        <div class="icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.4375 6.125C13.4375 5.50273 12.9348 5 12.3125 5C11.6902 5 11.1875 5.50273 11.1875 6.125V11.1875H6.125C5.50273 11.1875 5 11.6902 5 12.3125C5 12.9348 5.50273 13.4375 6.125 13.4375H11.1875V18.5C11.1875 19.1223 11.6902 19.625 12.3125 19.625C12.9348 19.625 13.4375 19.1223 13.4375 18.5V13.4375H18.5C19.1223 13.4375 19.625 12.9348 19.625 12.3125C19.625 11.6902 19.1223 11.1875 18.5 11.1875H13.4375V6.125Z" fill="#fff"/>
+                                            </svg>
+                                        </div>
+                                        <span>
+                                            Tạo lịch thi đấu
+                                        </span> 
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                         <!-- Item -->
+                         <div class="item">
+                            <div class="item-header">
+                                <h6>Vòng 2</h6>
+                            </div>
+                            <div class="item-body">
+                                <!-- empty -->
+                                <div class="empty-state">
+                                    <img src="../assets/images/Empty.png" alt="">
+                                    <p>Chưa có dữ liệu trận đấu</p>
+                                    <a class="button button-primary icon-left" href="taolichthidauvong.html">
+                                        <div class="icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.4375 6.125C13.4375 5.50273 12.9348 5 12.3125 5C11.6902 5 11.1875 5.50273 11.1875 6.125V11.1875H6.125C5.50273 11.1875 5 11.6902 5 12.3125C5 12.9348 5.50273 13.4375 6.125 13.4375H11.1875V18.5C11.1875 19.1223 11.6902 19.625 12.3125 19.625C12.9348 19.625 13.4375 19.1223 13.4375 18.5V13.4375H18.5C19.1223 13.4375 19.625 12.9348 19.625 12.3125C19.625 11.6902 19.1223 11.1875 18.5 11.1875H13.4375V6.125Z" fill="#fff"/>
+                                            </svg>
+                                        </div>
+                                        <span>
+                                            Tạo lịch thi đấu
+                                        </span> 
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                         <!-- Item -->
+                         <div class="item">
+                            <div class="item-header">
+                                <h6>Vòng 3</h6>
+                            </div>
+                            <div class="item-body">
+                                <!-- empty -->
+                                <div class="empty-state">
+                                    <img src="../assets/images/Empty.png" alt="">
+                                    <p>Chưa có dữ liệu trận đấu</p>
+                                    <a class="button button-primary icon-left" href="#!">
+                                        <div class="icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.4375 6.125C13.4375 5.50273 12.9348 5 12.3125 5C11.6902 5 11.1875 5.50273 11.1875 6.125V11.1875H6.125C5.50273 11.1875 5 11.6902 5 12.3125C5 12.9348 5.50273 13.4375 6.125 13.4375H11.1875V18.5C11.1875 19.1223 11.6902 19.625 12.3125 19.625C12.9348 19.625 13.4375 19.1223 13.4375 18.5V13.4375H18.5C19.1223 13.4375 19.625 12.9348 19.625 12.3125C19.625 11.6902 19.1223 11.1875 18.5 11.1875H13.4375V6.125Z" fill="#fff"/>
+                                            </svg>
+                                        </div>
+                                        <span>
+                                            Tạo lịch thi đấu
+                                        </span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+      <!--  bottom-sheet -->
+      <div class="bottom-sheet-container">
+        <div class="overlay"></div>
+        
+        <!-- bottom-sheet /Chỉnh sửa thông tin  -->
+        <div id="bottom-sheet-edit-bantochuc" class="bottom-sheet">
+            <div class="control-step">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Chỉnh sửa thông tin</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <form action="" class="on-lightmode">
+                            <div class="input-field">
+                                <label for="">Họ tên</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập email của bạn" value="Nguyễn Thành Trung">
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label for="">Email</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập email của bạn" value="test@gmail.com">
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label for="">Số điện thoại</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập email của bạn" value="0123456789">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="action-gropup">
+                            <a class="button button-primary close-bottom-sheet">Xác nhận</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
+
+</html>

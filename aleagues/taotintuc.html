@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="mobile-only darkmode">
+    <!-- page header -->
+    <!-- <div class="container"></div> để config padding -->
+    <div class="page-header">
+        <h4>
+            <a href="#!">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.70229 11.3312C4.26284 11.7706 4.26284 12.4843 4.70229 12.9237L10.3273 18.5487C10.7667 18.9882 11.4804 18.9882 11.9199 18.5487C12.3593 18.1093 12.3593 17.3956 11.9199 16.9562L8.21089 13.2507L18.9968 13.2507C19.6191 13.2507 20.1218 12.7479 20.1218 12.1257C20.1218 11.5034 19.6191 11.0007 18.9968 11.0007L8.2144 11.0007L11.9164 7.29521C12.3558 6.85576 12.3558 6.14209 11.9164 5.70264C11.4769 5.26318 10.7632 5.26318 10.3238 5.70264L4.69878 11.3276L4.70229 11.3312Z"
+                        fill="#F7F7FA" />
+                </svg>
+            </a>
+            Tạo tin tức mới
+        </h4>
+    </div>
+
+    <div class="taomuagiai">
+        <div class="container">
+            <div class="step-group">
+                <!-- Tạo giải đấu : bước 1 -->
+                <div class="step step1">
+                    <div class="step-body">
+                        <form action="">
+                            <div class="input-field">
+                                <label for="">Tiêu đề bài viết</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Tiêu đề bài viết">
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label for="">Nội dung bài viết</label>
+                                <div class="textarea-container">
+                                    <textarea type="text" placeholder="Nhập nội dung"></textarea>
+                                </div>
+                            </div>
+                            <div class="upload upload-field">
+                                <div class="label">Hình ảnh</div>
+                                <div class="input-upload">
+                                    <input name="input-upload" id="input-upload" type="file">
+                                    <label for="input-upload">
+                                        <div class="icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.4375 6.125C13.4375 5.50273 12.9348 5 12.3125 5C11.6902 5 11.1875 5.50273 11.1875 6.125V11.1875H6.125C5.50273 11.1875 5 11.6902 5 12.3125C5 12.9348 5.50273 13.4375 6.125 13.4375H11.1875V18.5C11.1875 19.1223 11.6902 19.625 12.3125 19.625C12.9348 19.625 13.4375 19.1223 13.4375 18.5V13.4375H18.5C19.1223 13.4375 19.625 12.9348 19.625 12.3125C19.625 11.6902 19.1223 11.1875 18.5 11.1875H13.4375V6.125Z" fill="#292A31"/>
+                                            </svg>
+                                        </div>
+                                        <p>Upload</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="action-group">
+                            <a class="button button-primary to-final-step">Xác nhận</a>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!--  Popup -->
+    <div id="popup-success" class="popup-container">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <div class="img">
+                <img src="../assets/images/success.png" alt="">
+            </div>
+            <div class="content">
+                <h5>Tin tức được tạo thành công </h5>
+            </div>
+            <div class="action-group">
+                <a href="chitietintuc.html" class="button button-primary">Xem chi tiết bài viết</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
+
+</html>

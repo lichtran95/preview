@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="mobile-only darkmode">
+    <!-- page header -->
+    <div class="page-header">
+        <h4>
+            <a href="#!">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.70229 11.3312C4.26284 11.7706 4.26284 12.4843 4.70229 12.9237L10.3273 18.5487C10.7667 18.9882 11.4804 18.9882 11.9199 18.5487C12.3593 18.1093 12.3593 17.3956 11.9199 16.9562L8.21089 13.2507L18.9968 13.2507C19.6191 13.2507 20.1218 12.7479 20.1218 12.1257C20.1218 11.5034 19.6191 11.0007 18.9968 11.0007L8.2144 11.0007L11.9164 7.29521C12.3558 6.85576 12.3558 6.14209 11.9164 5.70264C11.4769 5.26318 10.7632 5.26318 10.3238 5.70264L4.69878 11.3276L4.70229 11.3312Z"
+                        fill="#F7F7FA" />
+                </svg>
+            </a>
+            Trực tiếp
+        </h4>
+    </div>
+    <div class="dienbientrandau">
+        <div class="overview">
+            <div class="doibong">
+                <div class="img">
+                    <img src="../assets/images/Logo.png" alt="">
+                </div>
+                <p>Eagle FC</p>
+            </div>
+            <div class="thongtin">
+                <div class="status dangdienra">
+                    <p>Đang diễn ra</p>
+                </div>
+                <div class="time">15/07/2023</div>
+                <div class="tiso">
+                    <span>0</span>
+                    <span>-</span>
+                    <span>0</span>
+                </div>
+                <div class="realtime">08:50’</div>
+            </div>
+            <div class="doibong">
+                <div class="img">
+                    <img src="../assets/images/Logo.png" alt="">
+                </div>
+                <p>Eagle FC</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="tabs-control">
+                <div class="tab active" onclick="contentLive('dienbien')">Diễn biến</div>
+                <div class="tab" onclick="contentLive('canhan')">Cá nhân</div>
+                <div class="tab" onclick="contentLive('dongdoi')">Đồng đội</div>
+                <div class="tab" onclick="contentLive('giaidau')">Giải đấu</div>
+            </div>
+            <div class="tabs-content">
+                <div id="dienbien" class="tabs-content-item" style="">
+                    <div class="card-dienbien">
+                        <div class="header">
+                            <div class="goal">
+                                <span>⚽</span>
+                                <p>Vàooooo!!!</p>
+                                <p>80’</p>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="ti-so">
+                                <p>WAF FC</p>
+                                <p>6</p>
+                                <p>-</p>
+                                <p>2</p>
+                                <p>Eagle FC</p>
+                            </div>
+                            <div class="goal-info">
+                                <div class="info">
+                                    <h6>Nguyễn Tuấn Linh</h6>
+                                    <p>Hậu vệ • Số áo: 8</p>
+                                    <p>Kiến tạo: Thanh Lịch</p>
+                                </div>
+                                <div class="logo">
+                                    <img src="../assets/images/Logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="action-group">
+                                <a class="button button-outline" href="#!">Chỉnh sửa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-dienbien">
+                        <div class="header">
+                           <div class="thephat">
+                                <div class="thongtinthe">
+                                    <div class="the"> </div>
+                                    <p>Thẻ vàng</p>
+                                </div>
+                                <div class="time">69’</div>
+                           </div>
+                        </div>
+                        <div class="body">
+                            <div class="goal-info">
+                                <div class="info">
+                                    <h6>Nguyễn Tuấn Linh</h6>
+                                    <p>Hậu vệ • Số áo: 8</p>
+                                    <p>Kiến tạo: Thanh Lịch</p>
+                                </div>
+                                <div class="logo">
+                                    <img src="../assets/images/Logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="action-group">
+                                <a class="button button-outline" href="#!">Chỉnh sửa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="canhan" class="tabs-content-item" style="display: none;">
+                    <div class="cauthuvuaghidauan">
+                        <div class="tag">
+                            <p>Cầu thủ vừa ghi dấu ấn</p>
+                        </div>
+                        <div class="cover">
+                            <img src="../assets/images/covercauthu.png" alt="">
+                        </div>
+                        <div class="content-cauthu">
+                            <img src="../assets/images/avt_cauthu.png" alt="">
+                            <div class="info">
+                                <h6>Nguyễn Tuấn Linh</h6>
+                                <p>Đội: WAF FC</p>
+                                <p>Hậu vệ • Số áo: 8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="danhsach-thanhtuu-cotmoc">
+                        <label for="">
+                            Cột mốc danh hiệu ghi bàn trong Mùa 21
+                        </label>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Glock 6
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>3/6 bàn thắng</p>
+                                    <div class="progressBar">
+                                        <div class="progress">
+                                            <div class="current" style="width:0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="danhsach-thanhtuu-cotmoc">
+                        <label for="">
+                            Cột mốc danh hiệu Siêu hậu vệ
+                        </label>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Glock 6
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>3/6 bàn thắng</p>
+                                    <div class="progressBar">
+                                        <div class="progress">
+                                            <div class="current" style="width:0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lines"> </div>
+                    <div class="danhsach-thanhtuu-cotmoc">
+                        <label for="">
+                            Thành Tựu
+                        </label>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/Thanhtuu.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Bàn thắng (98)
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>Viên đạn của kẻ kết liễu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lines"> </div>
+                    <div class="danhsach-thanhtuu-cotmoc">
+                        <label for="">
+                            Cột mốc ghi bàn trong Vòng 9
+                        </label>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Glock 6
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>3/6 bàn thắng</p>
+                                    <div class="progressBar">
+                                        <div class="progress">
+                                            <div class="current" style="width:0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lines"> </div>
+                    <div class="bang">
+                        <div class="label">
+                            <h6>Thứ hạng cầu thủ</h6>
+                        </div>
+                        <div class="xephangcauthu">
+                            <div class="xephangcauthu-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_1.png" alt="">
+                                    <h6>Hạng 1</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-body">
+                                <div class="thongtincauthu">
+                                    <div class="img">
+                                        <img src="../assets/images/avt_cauthu.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="type huanluyenvien">
+                                            Huấn luyện viên
+                                        </div>
+                                        <h6>[Tên cầu thủ]</h6>
+                                        <p>Hậu vệ • Số áo: 8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Bàn thắng</label>
+                                        <div class="value">12</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangcauthu">
+                            <div class="xephangcauthu-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_2.png" alt="">
+                                    <h6>Hạng 2</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-body">
+                                <div class="thongtincauthu">
+                                    <div class="img">
+                                        <img src="../assets/images/avt_cauthu.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="type huanluyenvien">
+                                            Huấn luyện viên
+                                        </div>
+                                        <h6>[Tên cầu thủ]</h6>
+                                        <p>Hậu vệ • Số áo: 8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Bàn thắng</label>
+                                        <div class="value">12</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangcauthu">
+                            <div class="xephangcauthu-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_3.png" alt="">
+                                    <h6>Hạng 3</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-body">
+                                <div class="thongtincauthu">
+                                    <div class="img">
+                                        <img src="../assets/images/avt_cauthu.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="type huanluyenvien">
+                                            Huấn luyện viên
+                                        </div>
+                                        <h6>[Tên cầu thủ]</h6>
+                                        <p>Hậu vệ • Số áo: 8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Bàn thắng</label>
+                                        <div class="value">12</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="action-group">
+                            <a class="button button-outline" href="#!">
+                                <span>
+                                    Xem tất cả
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="dongdoi" class="tabs-content-item" style="display: none;">
+                    <div class="profile-doibong">
+                        <div class="profile-header">
+                            <img src="../assets/images/cover_doibong.png" alt="">
+                        </div>
+                        <div class="profile-body">
+                            <div class="layer">
+                                <img src="../assets/images/layer.png" alt="">
+                            </div>
+                            <div class="avt">
+                                <img src="../assets/images/Logo.png" alt="">
+                                <h5>WE ARE FAMILY FC</h5>
+                            </div>
+                            <div class="danhsach-chiso">
+                                <div class="chiso">
+                                    <label for="">
+                                        <img src="../assets/images/cotmoc.png" alt="">
+                                        Điểm
+                                    </label>
+                                    <div class="value">6</div>
+                                </div>
+                                <div class="chiso">
+                                    <label for="">
+                                        <img src="../assets/images/cotmoc.png" alt="">
+                                        Trận
+                                    </label>
+                                    <div class="value">6</div>
+                                </div>
+                                <div class="chiso">
+                                    <label for="">
+                                        <img src="../assets/images/cotmoc.png" alt="">
+                                        Điểm
+                                    </label>
+                                    <div class="value">6</div>
+                                </div>
+                                <div class="chiso">
+                                    <label for="">
+                                        <img src="../assets/images/cotmoc.png" alt="">
+                                        Trận
+                                    </label>
+                                    <div class="value">6</div>
+                                </div>
+                                <div class="chiso">
+                                    <label for="">
+                                        <img src="../assets/images/cotmoc.png" alt="">
+                                        Điểm
+                                    </label>
+                                    <div class="value">6</div>
+                                </div>
+                                <div class="chiso">
+                                    <label for="">
+                                        <img src="../assets/images/cotmoc.png" alt="">
+                                        Trận
+                                    </label>
+                                    <div class="value">6</div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="profile-footer">
+                            <h6>Nhà tài trợ</h6>
+                            <div class="logo">
+                                <img src="../assets/images/logo_taitro.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="danhsach-thanhtuu-cotmoc">
+                        <label for="">
+                            Cột mốc bàn thắng mới cho CLB
+                        </label>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Cột mốc bàn thắng mới cho CLB
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>1223 bàn thắng</p>
+                                    <div class="progressBar">
+                                        <div class="progress">
+                                            <div class="current" style="width:0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lines"> </div>
+                    <div class="danhsach-thanhtuu-cotmoc">
+                        <label for="">
+                            Giữ biểu tượng phòng ngự rực sáng
+                        </label>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Gạch - Đá - Thép - Bạch kim
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>Ít hơn3 bàn thua/ 1 vòng chơi</p>
+                                    <div class="progressBar">
+                                        <div class="progress">
+                                            <div class="current" style="width:0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="giaidau" class="tabs-content-item" style="display: none;">
+                     <!-- Bảng xếp hạng Vòng 5 -->
+                     <div class="bang">
+                        <div class="label">
+                            <h6>Bảng xếp hạng Vòng 5</h6>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_1.png" alt="">
+                                    <h6>Hạng 1</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_2.png" alt="">
+                                    <h6>Hạng 2</h6>
+                                </div>
+                                <div class="status down">
+                                    <img src="../assets/images/down.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_3.png" alt="">
+                                    <h6>Hạng 3</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="action-group">
+                            <a class="button button-outline" href="#!">
+                                <span>
+                                    Xem tất cả
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Bảng xếp hạng Bàn Thắng Mùa 21 -->
+                    <div class="bang">
+                        <div class="label">
+                            <h6>Bảng xếp hạng Bàn Thắng Mùa 21</h6>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_1.png" alt="">
+                                    <h6>Hạng 1</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_2.png" alt="">
+                                    <h6>Hạng 2</h6>
+                                </div>
+                                <div class="status down">
+                                    <img src="../assets/images/down.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_3.png" alt="">
+                                    <h6>Hạng 3</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="action-group">
+                            <a class="button button-outline" href="#!">
+                                <span>
+                                    Xem tất cả
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="danhsach-thanhtuu-cotmoc">
+                        <label for="">
+                            Thành Tựu SK League
+                        </label>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Tổng số bàn thắng (5693)
+                                    </h6>
+                                    <div class="icon open-bottom-sheet-tooltips">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM7.0625 9.875H7.625V8.375H7.0625C6.75078 8.375 6.5 8.12422 6.5 7.8125C6.5 7.50078 6.75078 7.25 7.0625 7.25H8.1875C8.49922 7.25 8.75 7.50078 8.75 7.8125V9.875H8.9375C9.24922 9.875 9.5 10.1258 9.5 10.4375C9.5 10.7492 9.24922 11 8.9375 11H7.0625C6.75078 11 6.5 10.7492 6.5 10.4375C6.5 10.1258 6.75078 9.875 7.0625 9.875ZM8 5C8.19891 5 8.38968 5.07902 8.53033 5.21967C8.67098 5.36032 8.75 5.55109 8.75 5.75C8.75 5.94891 8.67098 6.13968 8.53033 6.28033C8.38968 6.42098 8.19891 6.5 8 6.5C7.80109 6.5 7.61032 6.42098 7.46967 6.28033C7.32902 6.13968 7.25 5.94891 7.25 5.75C7.25 5.55109 7.32902 5.36032 7.46967 5.21967C7.61032 5.07902 7.80109 5 8 5Z" fill="#F7F7FA"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>Chúc mừng mỗi cột mốc +100 bàn thắng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Tổng số trận đấu (273)
+                                    </h6>
+                                    <div class="icon open-bottom-sheet-tooltips">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM7.0625 9.875H7.625V8.375H7.0625C6.75078 8.375 6.5 8.12422 6.5 7.8125C6.5 7.50078 6.75078 7.25 7.0625 7.25H8.1875C8.49922 7.25 8.75 7.50078 8.75 7.8125V9.875H8.9375C9.24922 9.875 9.5 10.1258 9.5 10.4375C9.5 10.7492 9.24922 11 8.9375 11H7.0625C6.75078 11 6.5 10.7492 6.5 10.4375C6.5 10.1258 6.75078 9.875 7.0625 9.875ZM8 5C8.19891 5 8.38968 5.07902 8.53033 5.21967C8.67098 5.36032 8.75 5.55109 8.75 5.75C8.75 5.94891 8.67098 6.13968 8.53033 6.28033C8.38968 6.42098 8.19891 6.5 8 6.5C7.80109 6.5 7.61032 6.42098 7.46967 6.28033C7.32902 6.13968 7.25 5.94891 7.25 5.75C7.25 5.55109 7.32902 5.36032 7.46967 5.21967C7.61032 5.07902 7.80109 5 8 5Z" fill="#F7F7FA"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>Chúc mừng mỗi cột mốc +20 trận đấu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Tổng số vòng chơi (2158)
+                                    </h6>
+                                    <div class="icon open-bottom-sheet-tooltips">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM7.0625 9.875H7.625V8.375H7.0625C6.75078 8.375 6.5 8.12422 6.5 7.8125C6.5 7.50078 6.75078 7.25 7.0625 7.25H8.1875C8.49922 7.25 8.75 7.50078 8.75 7.8125V9.875H8.9375C9.24922 9.875 9.5 10.1258 9.5 10.4375C9.5 10.7492 9.24922 11 8.9375 11H7.0625C6.75078 11 6.5 10.7492 6.5 10.4375C6.5 10.1258 6.75078 9.875 7.0625 9.875ZM8 5C8.19891 5 8.38968 5.07902 8.53033 5.21967C8.67098 5.36032 8.75 5.55109 8.75 5.75C8.75 5.94891 8.67098 6.13968 8.53033 6.28033C8.38968 6.42098 8.19891 6.5 8 6.5C7.80109 6.5 7.61032 6.42098 7.46967 6.28033C7.32902 6.13968 7.25 5.94891 7.25 5.75C7.25 5.55109 7.32902 5.36032 7.46967 5.21967C7.61032 5.07902 7.80109 5 8 5Z" fill="#F7F7FA"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>Chúc mừng mỗi cột mốc 10 vòng chơi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Tổng số lượt cầu thủ (20693)
+                                    </h6>
+                                    <div class="icon open-bottom-sheet-tooltips">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM7.0625 9.875H7.625V8.375H7.0625C6.75078 8.375 6.5 8.12422 6.5 7.8125C6.5 7.50078 6.75078 7.25 7.0625 7.25H8.1875C8.49922 7.25 8.75 7.50078 8.75 7.8125V9.875H8.9375C9.24922 9.875 9.5 10.1258 9.5 10.4375C9.5 10.7492 9.24922 11 8.9375 11H7.0625C6.75078 11 6.5 10.7492 6.5 10.4375C6.5 10.1258 6.75078 9.875 7.0625 9.875ZM8 5C8.19891 5 8.38968 5.07902 8.53033 5.21967C8.67098 5.36032 8.75 5.55109 8.75 5.75C8.75 5.94891 8.67098 6.13968 8.53033 6.28033C8.38968 6.42098 8.19891 6.5 8 6.5C7.80109 6.5 7.61032 6.42098 7.46967 6.28033C7.32902 6.13968 7.25 5.94891 7.25 5.75C7.25 5.55109 7.32902 5.36032 7.46967 5.21967C7.61032 5.07902 7.80109 5 8 5Z" fill="#F7F7FA"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>Chúc mừng các cột mốc +100 cầu thủ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Tổng số mùa giải (30)
+                                    </h6>
+                                    <div class="icon open-bottom-sheet-tooltips">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM7.0625 9.875H7.625V8.375H7.0625C6.75078 8.375 6.5 8.12422 6.5 7.8125C6.5 7.50078 6.75078 7.25 7.0625 7.25H8.1875C8.49922 7.25 8.75 7.50078 8.75 7.8125V9.875H8.9375C9.24922 9.875 9.5 10.1258 9.5 10.4375C9.5 10.7492 9.24922 11 8.9375 11H7.0625C6.75078 11 6.5 10.7492 6.5 10.4375C6.5 10.1258 6.75078 9.875 7.0625 9.875ZM8 5C8.19891 5 8.38968 5.07902 8.53033 5.21967C8.67098 5.36032 8.75 5.55109 8.75 5.75C8.75 5.94891 8.67098 6.13968 8.53033 6.28033C8.38968 6.42098 8.19891 6.5 8 6.5C7.80109 6.5 7.61032 6.42098 7.46967 6.28033C7.32902 6.13968 7.25 5.94891 7.25 5.75C7.25 5.55109 7.32902 5.36032 7.46967 5.21967C7.61032 5.07902 7.80109 5 8 5Z" fill="#F7F7FA"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>Chúc mừng cột mốc vòng 4, 8, 12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="danhsach-thanhtuu-cotmoc">
+                        <label for="">
+                            Thành Tựu A Leagues
+                        </label>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Tổng số bàn thắng (5693)
+                                    </h6>
+                                    <div class="icon open-bottom-sheet-tooltips">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM7.0625 9.875H7.625V8.375H7.0625C6.75078 8.375 6.5 8.12422 6.5 7.8125C6.5 7.50078 6.75078 7.25 7.0625 7.25H8.1875C8.49922 7.25 8.75 7.50078 8.75 7.8125V9.875H8.9375C9.24922 9.875 9.5 10.1258 9.5 10.4375C9.5 10.7492 9.24922 11 8.9375 11H7.0625C6.75078 11 6.5 10.7492 6.5 10.4375C6.5 10.1258 6.75078 9.875 7.0625 9.875ZM8 5C8.19891 5 8.38968 5.07902 8.53033 5.21967C8.67098 5.36032 8.75 5.55109 8.75 5.75C8.75 5.94891 8.67098 6.13968 8.53033 6.28033C8.38968 6.42098 8.19891 6.5 8 6.5C7.80109 6.5 7.61032 6.42098 7.46967 6.28033C7.32902 6.13968 7.25 5.94891 7.25 5.75C7.25 5.55109 7.32902 5.36032 7.46967 5.21967C7.61032 5.07902 7.80109 5 8 5Z" fill="#F7F7FA"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>Chúc mừng mỗi cột mốc +100 bàn thắng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Tổng số trận đấu (273)
+                                    </h6>
+                                    <div class="icon open-bottom-sheet-tooltips">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM7.0625 9.875H7.625V8.375H7.0625C6.75078 8.375 6.5 8.12422 6.5 7.8125C6.5 7.50078 6.75078 7.25 7.0625 7.25H8.1875C8.49922 7.25 8.75 7.50078 8.75 7.8125V9.875H8.9375C9.24922 9.875 9.5 10.1258 9.5 10.4375C9.5 10.7492 9.24922 11 8.9375 11H7.0625C6.75078 11 6.5 10.7492 6.5 10.4375C6.5 10.1258 6.75078 9.875 7.0625 9.875ZM8 5C8.19891 5 8.38968 5.07902 8.53033 5.21967C8.67098 5.36032 8.75 5.55109 8.75 5.75C8.75 5.94891 8.67098 6.13968 8.53033 6.28033C8.38968 6.42098 8.19891 6.5 8 6.5C7.80109 6.5 7.61032 6.42098 7.46967 6.28033C7.32902 6.13968 7.25 5.94891 7.25 5.75C7.25 5.55109 7.32902 5.36032 7.46967 5.21967C7.61032 5.07902 7.80109 5 8 5Z" fill="#F7F7FA"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>Chúc mừng mỗi cột mốc +20 trận đấu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Tổng số vòng chơi (2158)
+                                    </h6>
+                                    <div class="icon open-bottom-sheet-tooltips">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM7.0625 9.875H7.625V8.375H7.0625C6.75078 8.375 6.5 8.12422 6.5 7.8125C6.5 7.50078 6.75078 7.25 7.0625 7.25H8.1875C8.49922 7.25 8.75 7.50078 8.75 7.8125V9.875H8.9375C9.24922 9.875 9.5 10.1258 9.5 10.4375C9.5 10.7492 9.24922 11 8.9375 11H7.0625C6.75078 11 6.5 10.7492 6.5 10.4375C6.5 10.1258 6.75078 9.875 7.0625 9.875ZM8 5C8.19891 5 8.38968 5.07902 8.53033 5.21967C8.67098 5.36032 8.75 5.55109 8.75 5.75C8.75 5.94891 8.67098 6.13968 8.53033 6.28033C8.38968 6.42098 8.19891 6.5 8 6.5C7.80109 6.5 7.61032 6.42098 7.46967 6.28033C7.32902 6.13968 7.25 5.94891 7.25 5.75C7.25 5.55109 7.32902 5.36032 7.46967 5.21967C7.61032 5.07902 7.80109 5 8 5Z" fill="#F7F7FA"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>Chúc mừng mỗi cột mốc 10 vòng chơi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Tổng số lượt cầu thủ (20693)
+                                    </h6>
+                                    <div class="icon open-bottom-sheet-tooltips">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM7.0625 9.875H7.625V8.375H7.0625C6.75078 8.375 6.5 8.12422 6.5 7.8125C6.5 7.50078 6.75078 7.25 7.0625 7.25H8.1875C8.49922 7.25 8.75 7.50078 8.75 7.8125V9.875H8.9375C9.24922 9.875 9.5 10.1258 9.5 10.4375C9.5 10.7492 9.24922 11 8.9375 11H7.0625C6.75078 11 6.5 10.7492 6.5 10.4375C6.5 10.1258 6.75078 9.875 7.0625 9.875ZM8 5C8.19891 5 8.38968 5.07902 8.53033 5.21967C8.67098 5.36032 8.75 5.55109 8.75 5.75C8.75 5.94891 8.67098 6.13968 8.53033 6.28033C8.38968 6.42098 8.19891 6.5 8 6.5C7.80109 6.5 7.61032 6.42098 7.46967 6.28033C7.32902 6.13968 7.25 5.94891 7.25 5.75C7.25 5.55109 7.32902 5.36032 7.46967 5.21967C7.61032 5.07902 7.80109 5 8 5Z" fill="#F7F7FA"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>Chúc mừng các cột mốc +100 cầu thủ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Tổng số mùa giải (30)
+                                    </h6>
+                                    <div class="icon open-bottom-sheet-tooltips">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM7.0625 9.875H7.625V8.375H7.0625C6.75078 8.375 6.5 8.12422 6.5 7.8125C6.5 7.50078 6.75078 7.25 7.0625 7.25H8.1875C8.49922 7.25 8.75 7.50078 8.75 7.8125V9.875H8.9375C9.24922 9.875 9.5 10.1258 9.5 10.4375C9.5 10.7492 9.24922 11 8.9375 11H7.0625C6.75078 11 6.5 10.7492 6.5 10.4375C6.5 10.1258 6.75078 9.875 7.0625 9.875ZM8 5C8.19891 5 8.38968 5.07902 8.53033 5.21967C8.67098 5.36032 8.75 5.55109 8.75 5.75C8.75 5.94891 8.67098 6.13968 8.53033 6.28033C8.38968 6.42098 8.19891 6.5 8 6.5C7.80109 6.5 7.61032 6.42098 7.46967 6.28033C7.32902 6.13968 7.25 5.94891 7.25 5.75C7.25 5.55109 7.32902 5.36032 7.46967 5.21967C7.61032 5.07902 7.80109 5 8 5Z" fill="#F7F7FA"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>Chúc mừng cột mốc vòng 4, 8, 12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lines"> </div>
+                    
+                    <!-- Bảng Xếp hạng thành tựu Đội -->
+                    <div class="bang">
+                        <div class="label">
+                            <h6>Bảng Xếp hạng thành tựu Đội</h6>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_1.png" alt="">
+                                    <h6>Hạng 1</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_2.png" alt="">
+                                    <h6>Hạng 2</h6>
+                                </div>
+                                <div class="status down">
+                                    <img src="../assets/images/down.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_3.png" alt="">
+                                    <h6>Hạng 3</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="action-group">
+                            <a class="button button-outline" href="#!">
+                                <span>
+                                    Xem tất cả
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="action-fixed-group">
+            <a class="button button-outline open-bottom-sheet-capnhattrandau" href="#!">Cập nhật trận đấu</a>
+            <a class="button button-primary" href="#!">Kết thúc trận đấu</a>
+        </div>
+    </div>
+    <!--  bottom-sheet -->
+    <div class="bottom-sheet-container">
+        <div class="overlay"></div>
+        <!-- bottom-sheet / Loại sân -->
+        <div id="bottom-sheet-capnhattrandau" class="bottom-sheet">
+            <div class="control-step">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Cập nhật trận đấu</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <div class="label-thongso">
+                            Thông số
+                        </div>
+                        <div class="tabs-thongso">
+                            <div class="tab active" onclick="thongso('ghiban')">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 1.875C8.89303 1.875 7.32214 2.35152 5.986 3.24431C4.64985 4.1371 3.60844 5.40605 2.99348 6.8907C2.37852 8.37535 2.21762 10.009 2.53112 11.5851C2.84463 13.1612 3.61846 14.6089 4.75476 15.7452C5.89106 16.8815 7.3388 17.6554 8.9149 17.9689C10.491 18.2824 12.1247 18.1215 13.6093 17.5065C15.094 16.8916 16.3629 15.8502 17.2557 14.514C18.1485 13.1779 18.625 11.607 18.625 10C18.6227 7.84581 17.766 5.78051 16.2427 4.25727C14.7195 2.73403 12.6542 1.87727 10.5 1.875ZM16.4781 13.3922H13.8516L13.1281 12.3953L14.1148 9.52187L15.2867 9.13984L17.3367 10.7125C17.2397 11.6557 16.9473 12.5683 16.4781 13.3922ZM3.66563 10.7125L5.71172 9.14062L6.8836 9.52266L7.87032 12.3961L7.14844 13.3922H4.52188C4.05215 12.5684 3.75921 11.6558 3.66172 10.7125H3.66563ZM4.44688 6.75625L4.87735 8.20938L3.68047 9.12266C3.78658 8.29401 4.04398 7.49191 4.43985 6.75625H4.44688ZM9.01563 11.875L8.12032 9.26953L10.5 7.63359L12.8797 9.26953L11.9844 11.875H9.01563ZM16.1305 8.20938L16.5609 6.75625C16.9568 7.49191 17.2142 8.29401 17.3203 9.12266L16.1305 8.20938ZM15.6461 5.44531L14.9031 7.95156L13.7258 8.33359L11.125 6.54609V5.32891L13.3977 3.76641C14.2536 4.16671 15.0186 4.73809 15.6453 5.44531H15.6461ZM11.9117 3.27109L10.5 4.24141L9.08828 3.27109C10.0194 3.0763 10.9807 3.0763 11.9117 3.27109ZM7.60235 3.76641L9.875 5.32891V6.54609L7.275 8.33359L6.09766 7.95156L5.35469 5.44531C5.98142 4.73809 6.74636 4.16671 7.60235 3.76641ZM5.4336 14.6422H7.025L7.58516 16.2258C6.77174 15.843 6.04088 15.3051 5.4336 14.6422ZM9.09375 16.7289L8.16563 14.118L8.88672 13.125H12.1133L12.8344 14.118L11.9102 16.7289C10.9802 16.9238 10.0198 16.9238 9.08985 16.7289H9.09375ZM13.4188 16.2258L13.9789 14.6422H15.5703C14.9619 15.3055 14.2297 15.8434 13.4148 16.2258H13.4188Z" fill="black"/>
+                                </svg>
+                                <p>Ghi bàn</p>
+                            </div>
+                            <div class="tab" onclick="thongso('keypass')">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 1.875C8.89303 1.875 7.32214 2.35152 5.986 3.24431C4.64985 4.1371 3.60844 5.40605 2.99348 6.8907C2.37852 8.37535 2.21762 10.009 2.53112 11.5851C2.84463 13.1612 3.61846 14.6089 4.75476 15.7452C5.89106 16.8815 7.3388 17.6554 8.9149 17.9689C10.491 18.2824 12.1247 18.1215 13.6093 17.5065C15.094 16.8916 16.3629 15.8502 17.2557 14.514C18.1485 13.1779 18.625 11.607 18.625 10C18.6227 7.84581 17.766 5.78051 16.2427 4.25727C14.7195 2.73403 12.6542 1.87727 10.5 1.875ZM16.4781 13.3922H13.8516L13.1281 12.3953L14.1148 9.52187L15.2867 9.13984L17.3367 10.7125C17.2397 11.6557 16.9473 12.5683 16.4781 13.3922ZM3.66563 10.7125L5.71172 9.14062L6.8836 9.52266L7.87032 12.3961L7.14844 13.3922H4.52188C4.05215 12.5684 3.75921 11.6558 3.66172 10.7125H3.66563ZM4.44688 6.75625L4.87735 8.20938L3.68047 9.12266C3.78658 8.29401 4.04398 7.49191 4.43985 6.75625H4.44688ZM9.01563 11.875L8.12032 9.26953L10.5 7.63359L12.8797 9.26953L11.9844 11.875H9.01563ZM16.1305 8.20938L16.5609 6.75625C16.9568 7.49191 17.2142 8.29401 17.3203 9.12266L16.1305 8.20938ZM15.6461 5.44531L14.9031 7.95156L13.7258 8.33359L11.125 6.54609V5.32891L13.3977 3.76641C14.2536 4.16671 15.0186 4.73809 15.6453 5.44531H15.6461ZM11.9117 3.27109L10.5 4.24141L9.08828 3.27109C10.0194 3.0763 10.9807 3.0763 11.9117 3.27109ZM7.60235 3.76641L9.875 5.32891V6.54609L7.275 8.33359L6.09766 7.95156L5.35469 5.44531C5.98142 4.73809 6.74636 4.16671 7.60235 3.76641ZM5.4336 14.6422H7.025L7.58516 16.2258C6.77174 15.843 6.04088 15.3051 5.4336 14.6422ZM9.09375 16.7289L8.16563 14.118L8.88672 13.125H12.1133L12.8344 14.118L11.9102 16.7289C10.9802 16.9238 10.0198 16.9238 9.08985 16.7289H9.09375ZM13.4188 16.2258L13.9789 14.6422H15.5703C14.9619 15.3055 14.2297 15.8434 13.4148 16.2258H13.4188Z" fill="black"/>
+                                </svg>
+                                <p>Keypass</p>
+                            </div>
+                            <div class="tab" onclick="thongso('thevang')">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 1.875C8.89303 1.875 7.32214 2.35152 5.986 3.24431C4.64985 4.1371 3.60844 5.40605 2.99348 6.8907C2.37852 8.37535 2.21762 10.009 2.53112 11.5851C2.84463 13.1612 3.61846 14.6089 4.75476 15.7452C5.89106 16.8815 7.3388 17.6554 8.9149 17.9689C10.491 18.2824 12.1247 18.1215 13.6093 17.5065C15.094 16.8916 16.3629 15.8502 17.2557 14.514C18.1485 13.1779 18.625 11.607 18.625 10C18.6227 7.84581 17.766 5.78051 16.2427 4.25727C14.7195 2.73403 12.6542 1.87727 10.5 1.875ZM16.4781 13.3922H13.8516L13.1281 12.3953L14.1148 9.52187L15.2867 9.13984L17.3367 10.7125C17.2397 11.6557 16.9473 12.5683 16.4781 13.3922ZM3.66563 10.7125L5.71172 9.14062L6.8836 9.52266L7.87032 12.3961L7.14844 13.3922H4.52188C4.05215 12.5684 3.75921 11.6558 3.66172 10.7125H3.66563ZM4.44688 6.75625L4.87735 8.20938L3.68047 9.12266C3.78658 8.29401 4.04398 7.49191 4.43985 6.75625H4.44688ZM9.01563 11.875L8.12032 9.26953L10.5 7.63359L12.8797 9.26953L11.9844 11.875H9.01563ZM16.1305 8.20938L16.5609 6.75625C16.9568 7.49191 17.2142 8.29401 17.3203 9.12266L16.1305 8.20938ZM15.6461 5.44531L14.9031 7.95156L13.7258 8.33359L11.125 6.54609V5.32891L13.3977 3.76641C14.2536 4.16671 15.0186 4.73809 15.6453 5.44531H15.6461ZM11.9117 3.27109L10.5 4.24141L9.08828 3.27109C10.0194 3.0763 10.9807 3.0763 11.9117 3.27109ZM7.60235 3.76641L9.875 5.32891V6.54609L7.275 8.33359L6.09766 7.95156L5.35469 5.44531C5.98142 4.73809 6.74636 4.16671 7.60235 3.76641ZM5.4336 14.6422H7.025L7.58516 16.2258C6.77174 15.843 6.04088 15.3051 5.4336 14.6422ZM9.09375 16.7289L8.16563 14.118L8.88672 13.125H12.1133L12.8344 14.118L11.9102 16.7289C10.9802 16.9238 10.0198 16.9238 9.08985 16.7289H9.09375ZM13.4188 16.2258L13.9789 14.6422H15.5703C14.9619 15.3055 14.2297 15.8434 13.4148 16.2258H13.4188Z" fill="black"/>
+                                </svg>
+                                <p>Thẻ vàng</p>
+                            </div>
+                            <div class="tab" onclick="thongso('thedo')">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 1.875C8.89303 1.875 7.32214 2.35152 5.986 3.24431C4.64985 4.1371 3.60844 5.40605 2.99348 6.8907C2.37852 8.37535 2.21762 10.009 2.53112 11.5851C2.84463 13.1612 3.61846 14.6089 4.75476 15.7452C5.89106 16.8815 7.3388 17.6554 8.9149 17.9689C10.491 18.2824 12.1247 18.1215 13.6093 17.5065C15.094 16.8916 16.3629 15.8502 17.2557 14.514C18.1485 13.1779 18.625 11.607 18.625 10C18.6227 7.84581 17.766 5.78051 16.2427 4.25727C14.7195 2.73403 12.6542 1.87727 10.5 1.875ZM16.4781 13.3922H13.8516L13.1281 12.3953L14.1148 9.52187L15.2867 9.13984L17.3367 10.7125C17.2397 11.6557 16.9473 12.5683 16.4781 13.3922ZM3.66563 10.7125L5.71172 9.14062L6.8836 9.52266L7.87032 12.3961L7.14844 13.3922H4.52188C4.05215 12.5684 3.75921 11.6558 3.66172 10.7125H3.66563ZM4.44688 6.75625L4.87735 8.20938L3.68047 9.12266C3.78658 8.29401 4.04398 7.49191 4.43985 6.75625H4.44688ZM9.01563 11.875L8.12032 9.26953L10.5 7.63359L12.8797 9.26953L11.9844 11.875H9.01563ZM16.1305 8.20938L16.5609 6.75625C16.9568 7.49191 17.2142 8.29401 17.3203 9.12266L16.1305 8.20938ZM15.6461 5.44531L14.9031 7.95156L13.7258 8.33359L11.125 6.54609V5.32891L13.3977 3.76641C14.2536 4.16671 15.0186 4.73809 15.6453 5.44531H15.6461ZM11.9117 3.27109L10.5 4.24141L9.08828 3.27109C10.0194 3.0763 10.9807 3.0763 11.9117 3.27109ZM7.60235 3.76641L9.875 5.32891V6.54609L7.275 8.33359L6.09766 7.95156L5.35469 5.44531C5.98142 4.73809 6.74636 4.16671 7.60235 3.76641ZM5.4336 14.6422H7.025L7.58516 16.2258C6.77174 15.843 6.04088 15.3051 5.4336 14.6422ZM9.09375 16.7289L8.16563 14.118L8.88672 13.125H12.1133L12.8344 14.118L11.9102 16.7289C10.9802 16.9238 10.0198 16.9238 9.08985 16.7289H9.09375ZM13.4188 16.2258L13.9789 14.6422H15.5703C14.9619 15.3055 14.2297 15.8434 13.4148 16.2258H13.4188Z" fill="black"/>
+                                </svg>
+                                <p>Thẻ đỏ</p>
+                            </div>
+                            <div class="tab" onclick="thongso('cuuthua')">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 1.875C8.89303 1.875 7.32214 2.35152 5.986 3.24431C4.64985 4.1371 3.60844 5.40605 2.99348 6.8907C2.37852 8.37535 2.21762 10.009 2.53112 11.5851C2.84463 13.1612 3.61846 14.6089 4.75476 15.7452C5.89106 16.8815 7.3388 17.6554 8.9149 17.9689C10.491 18.2824 12.1247 18.1215 13.6093 17.5065C15.094 16.8916 16.3629 15.8502 17.2557 14.514C18.1485 13.1779 18.625 11.607 18.625 10C18.6227 7.84581 17.766 5.78051 16.2427 4.25727C14.7195 2.73403 12.6542 1.87727 10.5 1.875ZM16.4781 13.3922H13.8516L13.1281 12.3953L14.1148 9.52187L15.2867 9.13984L17.3367 10.7125C17.2397 11.6557 16.9473 12.5683 16.4781 13.3922ZM3.66563 10.7125L5.71172 9.14062L6.8836 9.52266L7.87032 12.3961L7.14844 13.3922H4.52188C4.05215 12.5684 3.75921 11.6558 3.66172 10.7125H3.66563ZM4.44688 6.75625L4.87735 8.20938L3.68047 9.12266C3.78658 8.29401 4.04398 7.49191 4.43985 6.75625H4.44688ZM9.01563 11.875L8.12032 9.26953L10.5 7.63359L12.8797 9.26953L11.9844 11.875H9.01563ZM16.1305 8.20938L16.5609 6.75625C16.9568 7.49191 17.2142 8.29401 17.3203 9.12266L16.1305 8.20938ZM15.6461 5.44531L14.9031 7.95156L13.7258 8.33359L11.125 6.54609V5.32891L13.3977 3.76641C14.2536 4.16671 15.0186 4.73809 15.6453 5.44531H15.6461ZM11.9117 3.27109L10.5 4.24141L9.08828 3.27109C10.0194 3.0763 10.9807 3.0763 11.9117 3.27109ZM7.60235 3.76641L9.875 5.32891V6.54609L7.275 8.33359L6.09766 7.95156L5.35469 5.44531C5.98142 4.73809 6.74636 4.16671 7.60235 3.76641ZM5.4336 14.6422H7.025L7.58516 16.2258C6.77174 15.843 6.04088 15.3051 5.4336 14.6422ZM9.09375 16.7289L8.16563 14.118L8.88672 13.125H12.1133L12.8344 14.118L11.9102 16.7289C10.9802 16.9238 10.0198 16.9238 9.08985 16.7289H9.09375ZM13.4188 16.2258L13.9789 14.6422H15.5703C14.9619 15.3055 14.2297 15.8434 13.4148 16.2258H13.4188Z" fill="black"/>
+                                </svg>
+                                <p>Cứu thua</p> 
+                            </div>
+                            <div class="tab" onclick="thongso('preassist')">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 1.875C8.89303 1.875 7.32214 2.35152 5.986 3.24431C4.64985 4.1371 3.60844 5.40605 2.99348 6.8907C2.37852 8.37535 2.21762 10.009 2.53112 11.5851C2.84463 13.1612 3.61846 14.6089 4.75476 15.7452C5.89106 16.8815 7.3388 17.6554 8.9149 17.9689C10.491 18.2824 12.1247 18.1215 13.6093 17.5065C15.094 16.8916 16.3629 15.8502 17.2557 14.514C18.1485 13.1779 18.625 11.607 18.625 10C18.6227 7.84581 17.766 5.78051 16.2427 4.25727C14.7195 2.73403 12.6542 1.87727 10.5 1.875ZM16.4781 13.3922H13.8516L13.1281 12.3953L14.1148 9.52187L15.2867 9.13984L17.3367 10.7125C17.2397 11.6557 16.9473 12.5683 16.4781 13.3922ZM3.66563 10.7125L5.71172 9.14062L6.8836 9.52266L7.87032 12.3961L7.14844 13.3922H4.52188C4.05215 12.5684 3.75921 11.6558 3.66172 10.7125H3.66563ZM4.44688 6.75625L4.87735 8.20938L3.68047 9.12266C3.78658 8.29401 4.04398 7.49191 4.43985 6.75625H4.44688ZM9.01563 11.875L8.12032 9.26953L10.5 7.63359L12.8797 9.26953L11.9844 11.875H9.01563ZM16.1305 8.20938L16.5609 6.75625C16.9568 7.49191 17.2142 8.29401 17.3203 9.12266L16.1305 8.20938ZM15.6461 5.44531L14.9031 7.95156L13.7258 8.33359L11.125 6.54609V5.32891L13.3977 3.76641C14.2536 4.16671 15.0186 4.73809 15.6453 5.44531H15.6461ZM11.9117 3.27109L10.5 4.24141L9.08828 3.27109C10.0194 3.0763 10.9807 3.0763 11.9117 3.27109ZM7.60235 3.76641L9.875 5.32891V6.54609L7.275 8.33359L6.09766 7.95156L5.35469 5.44531C5.98142 4.73809 6.74636 4.16671 7.60235 3.76641ZM5.4336 14.6422H7.025L7.58516 16.2258C6.77174 15.843 6.04088 15.3051 5.4336 14.6422ZM9.09375 16.7289L8.16563 14.118L8.88672 13.125H12.1133L12.8344 14.118L11.9102 16.7289C10.9802 16.9238 10.0198 16.9238 9.08985 16.7289H9.09375ZM13.4188 16.2258L13.9789 14.6422H15.5703C14.9619 15.3055 14.2297 15.8434 13.4148 16.2258H13.4188Z" fill="black"/>
+                                </svg>
+                                <p>Pre-assist</p>
+                            </div>
+                            <div class="tab" onclick="thongso('owngoal')">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 1.875C8.89303 1.875 7.32214 2.35152 5.986 3.24431C4.64985 4.1371 3.60844 5.40605 2.99348 6.8907C2.37852 8.37535 2.21762 10.009 2.53112 11.5851C2.84463 13.1612 3.61846 14.6089 4.75476 15.7452C5.89106 16.8815 7.3388 17.6554 8.9149 17.9689C10.491 18.2824 12.1247 18.1215 13.6093 17.5065C15.094 16.8916 16.3629 15.8502 17.2557 14.514C18.1485 13.1779 18.625 11.607 18.625 10C18.6227 7.84581 17.766 5.78051 16.2427 4.25727C14.7195 2.73403 12.6542 1.87727 10.5 1.875ZM16.4781 13.3922H13.8516L13.1281 12.3953L14.1148 9.52187L15.2867 9.13984L17.3367 10.7125C17.2397 11.6557 16.9473 12.5683 16.4781 13.3922ZM3.66563 10.7125L5.71172 9.14062L6.8836 9.52266L7.87032 12.3961L7.14844 13.3922H4.52188C4.05215 12.5684 3.75921 11.6558 3.66172 10.7125H3.66563ZM4.44688 6.75625L4.87735 8.20938L3.68047 9.12266C3.78658 8.29401 4.04398 7.49191 4.43985 6.75625H4.44688ZM9.01563 11.875L8.12032 9.26953L10.5 7.63359L12.8797 9.26953L11.9844 11.875H9.01563ZM16.1305 8.20938L16.5609 6.75625C16.9568 7.49191 17.2142 8.29401 17.3203 9.12266L16.1305 8.20938ZM15.6461 5.44531L14.9031 7.95156L13.7258 8.33359L11.125 6.54609V5.32891L13.3977 3.76641C14.2536 4.16671 15.0186 4.73809 15.6453 5.44531H15.6461ZM11.9117 3.27109L10.5 4.24141L9.08828 3.27109C10.0194 3.0763 10.9807 3.0763 11.9117 3.27109ZM7.60235 3.76641L9.875 5.32891V6.54609L7.275 8.33359L6.09766 7.95156L5.35469 5.44531C5.98142 4.73809 6.74636 4.16671 7.60235 3.76641ZM5.4336 14.6422H7.025L7.58516 16.2258C6.77174 15.843 6.04088 15.3051 5.4336 14.6422ZM9.09375 16.7289L8.16563 14.118L8.88672 13.125H12.1133L12.8344 14.118L11.9102 16.7289C10.9802 16.9238 10.0198 16.9238 9.08985 16.7289H9.09375ZM13.4188 16.2258L13.9789 14.6422H15.5703C14.9619 15.3055 14.2297 15.8434 13.4148 16.2258H13.4188Z" fill="black"/>
+                                </svg>
+                                <p>Own goal</p>
+                            </div>
+                        </div>
+                        <div class="tabs-content-thongso">
+                            <div id="ghiban" class="tab-content-thongso" style="">
+                                <div class="field">
+                                    <label for="">Thông tin bổ sung</label>
+                                    <div class="thongtinbosung">
+                                        <div class="checkbox">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="24" height="24" fill="white"/>
+                                                <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                            </svg>
+                                        </div>
+                                        <p> Bàn thắng định đoạt</p>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="">Đội bóng</label>
+                                     <div class="chondoibong">
+                                        <div class="doibong active">
+                                            <img src="../assets/images/Logo.png" alt="">
+                                            <p>WAL FC</p>
+                                        </div>
+                                        <div class="doibong">
+                                            <img src="../assets/images/Logo.png" alt="">
+                                            <p>WAL FC</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field on-light-bg">
+                                    <label for="">Cầu thủ ghi bàn</label>
+                                    <div class="input-container">
+                                        <input type="text" placeholder="Chọn" value="Trận 2">
+                                        <img src="../assets/icon/Chevron-down.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="input-field on-light-bg">
+                                    <label for="">Cách thức ghi bàn</label>
+                                    <div class="input-container">
+                                        <input type="text" placeholder="Chọn" value="Trận 2">
+                                        <img src="../assets/icon/Chevron-down.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="input-field on-light-bg">
+                                    <label for="">Cầu thủ kiến tạo</label>
+                                    <div class="input-container">
+                                        <input type="text" placeholder="Chọn" value="Trận 2">
+                                        <img src="../assets/icon/Chevron-down.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="input-field on-light-bg">
+                                    <label for="">Pre-assist</label>
+                                    <div class="input-container">
+                                        <input type="text" placeholder="Chọn" value="Trận 2">
+                                        <img src="../assets/icon/Chevron-down.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="input-field on-light-bg">
+                                    <label for="">Video Highlight</label>
+                                    <div class="input-container">
+                                        <input type="text" placeholder="Nhập đường dẫn youtube" value="Trận 2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="keypass" class="tab-content-thongso" style="display: none;">
+                                Content thuộc Keypass
+                            </div>
+                            <div id="thevang" class="tab-content-thongso" style="display: none;">
+                                Content thuộc Thẻ vàng
+                            </div>
+                            <div id="thedo" class="tab-content-thongso" style="display: none;">
+                                Content thuộc Thẻ đỏ
+                            </div>
+                            <div id="cuuthua" class="tab-content-thongso" style="display: none;">
+                                Content thuộc cứu thua
+                            </div>
+                            <div id="preassist" class="tab-content-thongso" style="display: none;">
+                                Content thuộc preassist
+                            </div>
+                            <div id="owngoal" class="tab-content-thongso" style="display: none;">
+                                Content thuộc owngoal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- Bottom-sheet tooltip -->
+        <div id="bottom-sheet-tooltips" class="bottom-sheet">
+            <div class="control-step">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Tooltip</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <p>Tooltip content</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <!-- end -->
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="mobile-only darkmode">
+    <!-- Login -->
+    <div class="login">
+        <div class="container">
+            <a href="" class="logo">
+                <img src="../assets/images/image_logo.png" alt="">
+            </a>
+            <h3>Đăng nhập</h3>
+            <form action="">
+                <div class="input-field error">
+                    <label for="">Email</label>
+                    <div class="input-container">
+                        <input type="text" placeholder="Nhập email của bạn">
+                    </div>
+                    <div class="error-message">Error messsage</div>
+                </div>
+
+                <div class="input-field">
+                    <label for="">Mật khẩu</label>
+                    <div class="input-container">
+                        <input type="password" placeholder="Nhập mật khẩu của bạn">
+                        <img src="../assets/icon/Eye.svg" alt="">
+                    </div>
+                    <a href="#!" class="button-link forgot-password text-right open-bottom-sheet-forgot-password">Quên
+                        mật khẩu?</a>
+                </div>
+            </form>
+            <a href="giaidau.html"class="button button-primary">Đăng nhập</a>
+            <div class="ask-create-new text-center">
+                <span>Bạn chưa có tài khoản</span>
+                <a href="#!" class="button-link open-bottom-sheet-create-account">Tạo tài khoản</a>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+   
+
+    <div class="bottom-sheet-container">
+        <div class="overlay"></div>
+        <!-- bottom-sheet / Quên mật khẩu -->
+        <div id="bottom-sheet-forgot-password" class="bottom-sheet has-multiple-step">
+            <!-- step 1 - Email -->
+            <div class="control-step step-1">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Quên Mật Khẩu</h5>
+                </div>
+                <div class="body-bottom-sheet">
+    
+                    <div class="body-content-1">
+                        <form action="" class="on-lightmode">
+                            <div class="input-field error">
+                                <label for="">Email</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập email của bạn">
+                                </div>
+                                <div class="error-message">Error messsage</div>
+                            </div>
+    
+                        </form>
+                        <a class="button button-primary run-to-step2" href="#!">Xác nhận</a>
+                    </div>
+                </div>
+            </div>
+            <!-- step 2 - OTP-->
+            <div class="control-step step-2 display-none">
+                <div class="heading-bottom-sheet">
+                    <div class="close back-to-step1">
+                        <img src="../assets/icon/Chevron-left.svg" alt="">
+                    </div>
+                    <h5>Xác thực OTP</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <form action="" class="on-lightmode">
+                            <div class="input-field otp">
+                                <label for="">Nhập mã OTP đã gửi qua email</label>
+                                <div class="group">
+                                    <div class="input-container">
+                                        <input maxlength="1" type="text" placeholder="-">
+                                    </div>
+                                    <div class="input-container">
+                                        <input maxlength="1" type="text" placeholder="-">
+                                    </div>
+                                    <div class="input-container">
+                                        <input maxlength="1" type="text" placeholder="-">
+                                    </div>
+                                    <div class="input-container">
+                                        <input maxlength="1" type="text" placeholder="-">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <a class="button button-primary run-to-step3" href="#!">Xác nhận</a>
+                        <div class="ask-create-new on-bottom-sheet text-center">
+                            <span>Bạn không nhận được OTP?</span>
+                            <a href="" class="button-link">Gửi lại mã</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- step 3 - New Password-->
+            <div class="control-step step-3 display-none">
+                <div class="heading-bottom-sheet">
+                    <div class="close back-to-step2">
+                        <img src="../assets/icon/Chevron-left.svg" alt="">
+                    </div>
+                    <h5>Tạo mật khẩu mới</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <form action="" class="on-lightmode">
+                            <div class="input-field">
+                                <label for="">Mật khẩu mới</label>
+                                <div class="input-container">
+                                    <input type="password" placeholder="Nhập mật khẩu của bạn">
+                                    <img src="../assets/icon/Eye.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label for="">Nhập lại mật khẩu</label>
+                                <div class="input-container">
+                                    <input type="password" placeholder="Nhập mật khẩu của bạn">
+                                    <img src="../assets/icon/Eye.svg" alt="">
+                                </div>
+                            </div>
+                        </form>
+                        <a class="button button-primary run-to-step4" href="#!">Xác nhận</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Step 4 - Notification -->
+            <div class="control-step step-4 display-none">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Thông báo</h5>
+                </div>
+                <div class="body-bottom-sheet">
+    
+                    <div class="body-content-1">
+                        <div class="notifications">
+                            <img src="../assets/images/success.png" alt="">
+                            <div class="content">
+                                <h5>Đổi mật khẩu thành công</h5>
+                                <p>Tạo mật khẩu mới thành công. Giờ đây bạn có thể đăng nhập bằng mật khẩu mới</p>
+                                <a class="button button-primary run-to-step2" href="#!">Xác nhận</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    
+        <!-- bottom-sheet / Tạo tài khoản -->
+        <div id="bottom-sheet-create-account" class="bottom-sheet has-multiple-step">
+            <!-- step 1 - Email -->
+            <div class="control-step step-1">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Tạo tài khoản</h5>
+                </div>
+                <div class="body-bottom-sheet">
+    
+                    <div class="body-content-1">
+                        <form action="" class="on-lightmode">
+                            <div class="input-field">
+                                <label for="">Tên đăng nhập</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập email của bạn">
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label for="">Tạo mật khẩu</label>
+                                <div class="input-container">
+                                    <input type="password" placeholder="Nhập mật khẩu của bạn">
+                                    <img src="../assets/icon/Eye.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label for="">Nhập lại mật khẩu</label>
+                                <div class="input-container">
+                                    <input type="password" placeholder="Nhập lại mật khẩu của bạn">
+                                    <img src="../assets/icon/Eye.svg" alt="">
+                                </div>
+                            </div>
+                        </form>
+                        <a class="button button-primary run-to-step2" href="#!">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+            <!-- step 2 - OTP-->
+            <div class="control-step step-2 display-none">
+                <div class="heading-bottom-sheet">
+                    <div class="close back-to-step1">
+                        <img src="../assets/icon/Chevron-left.svg" alt="">
+                    </div>
+                    <h5>Xác thực OTP</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <form action="" class="on-lightmode">
+                            <div class="input-field otp">
+                                <label for="">Nhập mã OTP đã gửi qua email</label>
+                                <div class="group">
+                                    <div class="input-container">
+                                        <input maxlength="1" type="text" placeholder="-">
+                                    </div>
+                                    <div class="input-container">
+                                        <input maxlength="1" type="text" placeholder="-">
+                                    </div>
+                                    <div class="input-container">
+                                        <input maxlength="1" type="text" placeholder="-">
+                                    </div>
+                                    <div class="input-container">
+                                        <input maxlength="1" type="text" placeholder="-">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <a class="button button-primary run-to-step3" href="#!">Xác nhận</a>
+                        <div class="ask-create-new on-bottom-sheet text-center">
+                            <span>Bạn không nhận được OTP?</span>
+                            <a href="" class="button-link">Gửi lại mã</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Step 3 - Notification -->
+            <div class="control-step step-3 display-none">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Thông báo</h5>
+                </div>
+                <div class="body-bottom-sheet">
+    
+                    <div class="body-content-1">
+                        <div class="notifications">
+                            <img src="../assets/images/success.png" alt="">
+                            <div class="content">
+                                <h5>Tạo tài khoản thành công</h5>
+                                <p>Chúc mừng bạn đã tạo thành công tài khoản. Bạn có thể đăng nhập.</p>
+                                <a class="button button-primary run-to-step2" href="#!">Xác nhận</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+   
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
+
+</html>

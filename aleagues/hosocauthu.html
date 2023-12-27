@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="mobile-only darkmode">
+    <!-- page header -->
+    <!-- <div class="container"></div> để config padding -->
+    <div class="page-header">
+        <h4>
+            <a href="#!">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.70229 11.3312C4.26284 11.7706 4.26284 12.4843 4.70229 12.9237L10.3273 18.5487C10.7667 18.9882 11.4804 18.9882 11.9199 18.5487C12.3593 18.1093 12.3593 17.3956 11.9199 16.9562L8.21089 13.2507L18.9968 13.2507C19.6191 13.2507 20.1218 12.7479 20.1218 12.1257C20.1218 11.5034 19.6191 11.0007 18.9968 11.0007L8.2144 11.0007L11.9164 7.29521C12.3558 6.85576 12.3558 6.14209 11.9164 5.70264C11.4769 5.26318 10.7632 5.26318 10.3238 5.70264L4.69878 11.3276L4.70229 11.3312Z"
+                        fill="#F7F7FA" />
+                </svg>
+            </a>
+            Hồ sơ cầu thủ
+        </h4>
+    </div>
+
+   <div class="hosocauthu">
+        <div class="overview">
+            <div class="profile-cauthu">
+                <div class="profile-header">
+                    <img src="../assets/images/Logo.png" alt="">
+                    <p>CBS FC</p>
+                </div>
+                <div class="profile-body">
+                    <div class="thongtincauthu">
+                        <div class="img">
+                            <img src="../assets/images/avt_cauthu.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="type huanluyenvien">
+                                Huấn luyện viên
+                            </div>
+                            <h6>Nguyyễn Tuấn Linh</h6>
+                            <p>Hậu vệ • Số áo: 8</p>
+                        </div>
+                    </div>
+                    <div class="danhsach-chiso">
+                        <div class="chiso">
+                            <label for="">
+                                <img src="../assets/images/cotmoc.png" alt="">
+                                Điểm
+                            </label>
+                            <div class="value">6</div>
+                        </div>
+                        <div class="chiso">
+                            <label for="">
+                                <img src="../assets/images/cotmoc.png" alt="">
+                                Trận
+                            </label>
+                            <div class="value">6</div>
+                        </div>
+                        <div class="chiso">
+                            <label for="">
+                                <img src="../assets/images/cotmoc.png" alt="">
+                                Điểm
+                            </label>
+                            <div class="value">6</div>
+                        </div>
+                        <div class="chiso">
+                            <label for="">
+                                <img src="../assets/images/cotmoc.png" alt="">
+                                Trận
+                            </label>
+                            <div class="value">6</div>
+                        </div>
+                        <div class="chiso">
+                            <label for="">
+                                <img src="../assets/images/cotmoc.png" alt="">
+                                Điểm
+                            </label>
+                            <div class="value">6</div>
+                        </div>
+                        <div class="chiso">
+                            <label for="">
+                                <img src="../assets/images/cotmoc.png" alt="">
+                                Trận
+                            </label>
+                            <div class="value">6</div>
+                        </div>
+                   </div>
+                </div>
+                <div class="profile-footer">
+                    <h6>Nhà tài trợ</h6>
+                    <div class="logo">
+                        <img src="../assets/images/logo_taitro.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="tabs-control">
+            <div class="tab active" onclick="chitietcauthu('thanhtuu')">Thành tựu</div>
+            <div class="tab" onclick="chitietcauthu('theluc')">Thể lực</div>
+            <div class="tab" onclick="chitietcauthu('daihung')">Đại hùng</div>
+            <div class="tab" onclick="chitietcauthu('thongtincanhan')">Thông tin cá nhân</div>
+
+        </div>
+        <div class="tabs-content">
+            <div id="thanhtuu" class="tabs-cauthu-content-item">
+                <div class="danhsach-thanhtuu-cotmoc">
+                    <label for="">
+                        Thành Tựu
+                    </label>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-group">
+                        <a href="#!" class="button button-outline open-bottom-sheet-thanhtichkhac">Xem tất cả</a>
+                    </div>
+                </div>
+                <div class="lines"> </div>
+                <div class="danhsach-thanhtuu-cotmoc">
+                    <label for="">
+                        Đặc biệt
+                    </label>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-group">
+                        <a href="#!" class="button button-outline open-bottom-sheet-thanhtichkhac">Xem tất cả</a>
+                    </div>
+                </div>
+                <div class="lines"> </div>
+                <div class="tag-muagiai">
+                    <div class="info">
+                        <img src="../assets/images/Logo.png" alt="">
+                        <h6>SK Leagues Mùa 21 </h6>
+                    </div>
+                    <div class="status dangdienra">
+                        Đang diễn ra
+                    </div>
+                </div>
+                <div class="danhsach-thanhtuu-cotmoc">
+                    <label for="">
+                        Đặc biệt
+                    </label>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhtuu-cotmoc">
+                        <img src="../assets/images/Thanhtuu.png" alt="">
+                        <div class="thongtin">
+                            <div class="heading">
+                                <h6>
+                                    Bàn thắng (98)
+                                </h6>
+                            </div>
+                            <div class="body">
+                                <p>Viên đạn của kẻ kết liễu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-group">
+                        <a href="#!" class="button button-outline open-bottom-sheet-thanhtichkhac">Xem tất cả</a>
+                    </div>
+                </div>
+            </div>
+            <div id="theluc" class="tabs-cauthu-content-item" style="display: none;">
+                2
+            </div>
+            <div id="daihung" class="tabs-cauthu-content-item" style="display: none;">
+                <div class="daihungtinh">
+                    <div class="heading">
+                        <img src="../assets/images/daihungtinh.png" alt="">
+                    </div>
+                    <div class="body">
+                        <div class="danhsach-thanhtuu-cotmoc">
+                            <div class="thanhtuu-cotmoc">
+                                <img src="../assets/images/Thanhtuu.png" alt="">
+                                <div class="thongtin">
+                                    <div class="heading">
+                                        <h6>
+                                            Bàn thắng (98)
+                                        </h6>
+                                    </div>
+                                    <div class="body">
+                                        <p>Viên đạn của kẻ kết liễu</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thanhtuu-cotmoc">
+                                <img src="../assets/images/Thanhtuu.png" alt="">
+                                <div class="thongtin">
+                                    <div class="heading">
+                                        <h6>
+                                            Bàn thắng (98)
+                                        </h6>
+                                    </div>
+                                    <div class="body">
+                                        <p>Viên đạn của kẻ kết liễu</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thanhtuu-cotmoc">
+                                <img src="../assets/images/Thanhtuu.png" alt="">
+                                <div class="thongtin">
+                                    <div class="heading">
+                                        <h6>
+                                            Bàn thắng (98)
+                                        </h6>
+                                    </div>
+                                    <div class="body">
+                                        <p>Viên đạn của kẻ kết liễu</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thanhtuu-cotmoc">
+                                <img src="../assets/images/Thanhtuu.png" alt="">
+                                <div class="thongtin">
+                                    <div class="heading">
+                                        <h6>
+                                            Bàn thắng (98)
+                                        </h6>
+                                    </div>
+                                    <div class="body">
+                                        <p>Viên đạn của kẻ kết liễu</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thanhtuu-cotmoc">
+                                <img src="../assets/images/Thanhtuu.png" alt="">
+                                <div class="thongtin">
+                                    <div class="heading">
+                                        <h6>
+                                            Bàn thắng (98)
+                                        </h6>
+                                    </div>
+                                    <div class="body">
+                                        <p>Viên đạn của kẻ kết liễu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="thongtincanhan" class="tabs-cauthu-content-item" style="display: none;">
+                 <!-- Thông tin ban tổ chức -->
+                 <div class="thongtincanhan">
+                    <!-- item -->
+                    <div class="item">
+                        <div class="item-header">
+                            <p>Thông tin cầu thủ</p>
+                            <div class="function">
+                                <a href="#!" class="edit open-bottom-sheet-edit-bantochuc">Chỉnh sửa</a>
+                            </div>
+                        </div>
+                        <div class="item-body">
+                            <div class="infor-list">
+                                <div class="infor">
+                                    <p class="label">Họ tên</p>
+                                    <p class="content">Trần Trung Hiếu</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Email</p>
+                                    <p class="content">trunghieu@aleagues.com</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Số điện thoại</p>
+                                    <p class="content">0123456789</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Số điện thoại</p>
+                                    <p class="content">0123456789</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Số điện thoại</p>
+                                    <p class="content">0123456789</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Số điện thoại</p>
+                                    <p class="content">0123456789</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Số điện thoại</p>
+                                    <p class="content">0123456789</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Số điện thoại</p>
+                                    <p class="content">0123456789</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="item">
+                        <div class="item-header">
+                            <p>Thông tin thi đấu</p>
+                            <div class="function">
+                                <a href="#!" class="edit open-bottom-sheet-edit-bantochuc">Chỉnh sửa</a>
+                            </div>
+                        </div>
+                        <div class="item-body">
+                            <div class="infor-list">
+                                <div class="infor">
+                                    <p class="label">Họ tên</p>
+                                    <p class="content">Trần Trung Hiếu</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Email</p>
+                                    <p class="content">trunghieu@aleagues.com</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Số điện thoại</p>
+                                    <p class="content">0123456789</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="item">
+                        <div class="item-header">
+                            <p>Thông tin cá nhân</p>
+                            <div class="function">
+                                <a href="#!" class="edit open-bottom-sheet-edit-bantochuc">Chỉnh sửa</a>
+                            </div>
+                        </div>
+                        <div class="item-body">
+                            <div class="infor-list">
+                                <div class="infor">
+                                    <p class="label">Họ tên</p>
+                                    <p class="content">Trần Trung Hiếu</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Email</p>
+                                    <p class="content">trunghieu@aleagues.com</p>
+                                </div>
+                                <div class="infor">
+                                    <p class="label">Số điện thoại</p>
+                                    <p class="content">0123456789</p>
+                                </div>
+                                <div class="infor cccd">
+                                    <p class="label">Số điện thoại</p>
+                                    <img src="../assets/images/cccd.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+   </div>
+
+   <!--  bottom-sheet -->
+   <div class="bottom-sheet-container">
+    <div class="overlay"></div>
+    <!-- bottom-sheet / Loại sân -->
+    <div id="bottom-sheet-thanhtichkhac" class="bottom-sheet">
+        <div class="control-step">
+            <div class="heading-bottom-sheet">
+                <div class="close close-bottom-sheet">
+                    <img src="../assets/icon/Close.svg" alt="">
+                </div>
+                <h5>Thành tích khác</h5>
+            </div>
+            <div class="body-bottom-sheet">
+                <div class="body-content-1">            
+                    <div class="danhsach-thanhtuu-cotmoc on-lightmode">
+                        <label for="">
+                            Thành tích cứu thua
+                        </label>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/cotmoc_grey.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Cứu thua (3/9)
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>Giá trị tương đương bàn thắng</p>
+                                    <div class="progressBar">
+                                        <div class="progress">
+                                            <div class="current" style="width:33.33%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lines on-lightmode"> </div>
+                    <div class="danhsach-thanhtuu-cotmoc on-lightmode">
+                        <label for="">
+                            Cột mốc phòng ngự (áp dụng cho thủ môn, hậu vệ)
+                        </label>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/Thanhtuu.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Bàn thắng (98)
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>Viên đạn của kẻ kết liễu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/Thanhtuu.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Bàn thắng (98)
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>Viên đạn của kẻ kết liễu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/Thanhtuu.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Bàn thắng (98)
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>Viên đạn của kẻ kết liễu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtuu-cotmoc">
+                            <img src="../assets/images/Thanhtuu.png" alt="">
+                            <div class="thongtin">
+                                <div class="heading">
+                                    <h6>
+                                        Bàn thắng (98)
+                                    </h6>
+                                </div>
+                                <div class="body">
+                                    <p>Viên đạn của kẻ kết liễu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+   
+    <!-- end -->
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
+
+</html>

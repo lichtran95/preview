@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="mobile-only darkmode">
+    <!-- page header -->
+    <!-- <div class="container"></div> để config padding -->
+    <div class="page-header">
+        <h4>
+            <a href="#!">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.70229 11.3312C4.26284 11.7706 4.26284 12.4843 4.70229 12.9237L10.3273 18.5487C10.7667 18.9882 11.4804 18.9882 11.9199 18.5487C12.3593 18.1093 12.3593 17.3956 11.9199 16.9562L8.21089 13.2507L18.9968 13.2507C19.6191 13.2507 20.1218 12.7479 20.1218 12.1257C20.1218 11.5034 19.6191 11.0007 18.9968 11.0007L8.2144 11.0007L11.9164 7.29521C12.3558 6.85576 12.3558 6.14209 11.9164 5.70264C11.4769 5.26318 10.7632 5.26318 10.3238 5.70264L4.69878 11.3276L4.70229 11.3312Z"
+                        fill="#F7F7FA" />
+                </svg>
+            </a>
+            Tạo lịch thi đấu vòng 3
+        </h4>
+       
+    </div>
+
+    <div class="taolichthidauvong">
+        <div class="container">
+            <div class="progressBar">
+                <div class="progress">
+                    <div class="current" style="width:25%;"></div>
+                </div>
+            </div>
+            <div class="step-group">
+                <!-- Tạo giải đấu : bước 1 -->
+                <div class="step step1">
+                    <div class="step-header">
+                        <h5>Bước 1: Thời gian thi đấu</h5>
+                    </div>
+                    <div class="step-body">
+                        <form action="">
+                            <div class="input-field">
+                                <label for="">Thời gian dự kiến bắt đầu</label>
+                                <div class="input-container">
+                                    <input type="date" placeholder="Chọn thời gian">
+                                </div>
+                            </div>
+                           
+                        </form>
+                        <div class="action-group">
+                            <a class="button button-primary to-step2">Tiếp tục</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Tạo giải đấu : bước 2 -->
+                 <div class="step step2" style="display:none;">
+                    <div class="step-header">
+                        <h5>Bước 2: Trận đấu</h5>
+                    </div>
+                    <div class="step-body">
+                        <!-- danh sách trận đấu -->
+                       <div class="danhsachtrandau">
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="item-header">
+                                    <p>Trận 1</p>
+                                </div>
+                                <div class="item-body">
+                                    <div class="trandau">
+                                        <div class="doibong">
+                                            <div class="img">
+                                                <img src="../assets/images/Logo.png" alt="">
+                                            </div>
+                                            <p>Eagle FC</p>
+                                        </div>
+                                        <div class="thongtin">
+                                            <div class="status chuabatdau">
+                                                <p>Chưa bắt đầu</p>
+                                            </div>
+                                            <div class="time">15/07/2023</div>
+                                            <div class="tiso">
+                                                <span>0</span>
+                                                <span>-</span>
+                                                <span>0</span>
+                                            </div>
+                                        </div>
+                                        <div class="doibong">
+                                            <div class="img">
+                                                <img src="../assets/images/Logo.png" alt="">
+                                            </div>
+                                            <p>Eagle FC</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Item -->
+                             <div class="item">
+                                <div class="item-header">
+                                    <p>Trận 2</p>
+                                </div>
+                                <div class="item-body">
+                                    <a class="button button-dashed open-bottom-sheet-taotrandau">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4375 6.125C13.4375 5.50273 12.9348 5 12.3125 5C11.6902 5 11.1875 5.50273 11.1875 6.125V11.1875H6.125C5.50273 11.1875 5 11.6902 5 12.3125C5 12.9348 5.50273 13.4375 6.125 13.4375H11.1875V18.5C11.1875 19.1223 11.6902 19.625 12.3125 19.625C12.9348 19.625 13.4375 19.1223 13.4375 18.5V13.4375H18.5C19.1223 13.4375 19.625 12.9348 19.625 12.3125C19.625 11.6902 19.1223 11.1875 18.5 11.1875H13.4375V6.125Z" fill="#3A3A44"/>
+                                        </svg>
+                                        Thêm đội bóng
+                                    </a>
+                                </div>
+                            </div>
+                       </div>
+                        <div class="action-group">
+                            <a href="#!" class="button button-primary to-final-step">Tiếp tục</a>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+
+    <!--  bottom-sheet -->
+    <div class="bottom-sheet-container">
+        <div class="overlay"></div>
+          <!-- bottom-sheet /Tạo thông tin trận đấu  -->
+          <div id="bottom-sheet-taotrandau" class="bottom-sheet">
+            <!-- Thông tin trận -->
+            <div class="control-step thongtintran">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Trận 2</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <form action="" class="on-lightmode">
+                            <div class="input-field open-bottom-sheet-chondoibong">
+                                <label for="">Đội A</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Chọn đội">
+                                    <img src="../assets/icon/Chevron-down.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="input-field open-bottom-sheet-sovongdau">
+                                <label for="">Đội B</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Chọn đội">
+                                    <img src="../assets/icon/Chevron-down.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="input-field open-bottom-sheet-sovongdau">
+                                <label for="">Thứ tự thi đấu</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Chọn đội" value="Trận 2">
+                                    <img src="../assets/icon/Chevron-down.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="input-field open-bottom-sheet-sovongdau">
+                                <label for="">Thời gian diễn ra</label>
+                                <div class="input-container">
+                                    <input type="date" placeholder="Chọn đội" value="Trận 2">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="action-gropup">
+                            <a class="button button-primary close-bottom-sheet">Xác nhận</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- step 2 - Chọn đội bóng-->
+             <div class="control-step chondoibong display-none">
+                <div class="heading-bottom-sheet">
+                    <div class="close back-to-thongtintran">
+                        <img src="../assets/icon/Chevron-left.svg" alt="">
+                    </div>
+                    <h5>Chọn đội bóng</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <div class="single-selection">
+                            <div class="item">
+                                <input name="single-choice" id="single-choice" type="radio">
+                                <label for="single-choice" class="for-chondoibong">
+                                    <div class="content">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                        <p>WAF FC</p>
+                                    </div>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="white"/>
+                                            <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <input name="single-choice2" id="single-choice2" type="radio">
+                                <label for="single-choice2" class="for-chondoibong">
+                                    <div class="content">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                        <p>WAF FC</p>
+                                    </div>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="white"/>
+                                            <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+
+    <!--  Popup -->
+    <div id="popup-success" class="popup-container">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <div class="img">
+                <img src="../assets/images/success.png" alt="">
+            </div>
+            <div class="content">
+                <h5>Cập nhật lịch thi đấu cho vòng 3 thành công</h5>
+                <p>Giờ đây bạn có thể tạo mùa giải cho giải đấu và cập nhật các thông tin mới cho giải đấu.</p>
+            </div>
+            <div class="action-group">
+                <a href="chitietvongdau.html" class="button button-primary">Xem lịch thi đấu của vòng 3</a>
+                <a href="chitietmuagiai_dangdienra.html" class="button button-outline">Quay về trang chi tiết mùa giải</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
+
+</html>

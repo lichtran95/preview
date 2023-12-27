@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="mobile-only darkmode">
+    <!-- page header -->
+    <div class="page-header">
+        <h4>
+            <a href="#!">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.70229 11.3312C4.26284 11.7706 4.26284 12.4843 4.70229 12.9237L10.3273 18.5487C10.7667 18.9882 11.4804 18.9882 11.9199 18.5487C12.3593 18.1093 12.3593 17.3956 11.9199 16.9562L8.21089 13.2507L18.9968 13.2507C19.6191 13.2507 20.1218 12.7479 20.1218 12.1257C20.1218 11.5034 19.6191 11.0007 18.9968 11.0007L8.2144 11.0007L11.9164 7.29521C12.3558 6.85576 12.3558 6.14209 11.9164 5.70264C11.4769 5.26318 10.7632 5.26318 10.3238 5.70264L4.69878 11.3276L4.70229 11.3312Z"
+                        fill="#F7F7FA" />
+                </svg>
+            </a>
+            Vòng 2
+        </h4>
+        <div class="function">
+            <a href="#!" class="function-search">
+                <div class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.0006 10.5003C17.0006 11.9348 16.535 13.2598 15.7506 14.3349L19.707 18.2944C20.0977 18.6851 20.0977 19.3195 19.707 19.7101C19.3164 20.1008 18.682 20.1008 18.2913 19.7101L14.3349 15.7506C13.2598 16.5381 11.9348 17.0006 10.5003 17.0006C6.90952 17.0006 4 14.0911 4 10.5003C4 6.90952 6.90952 4 10.5003 4C14.0911 4 17.0006 6.90952 17.0006 10.5003ZM10.5003 15.0005C11.0913 15.0005 11.6765 14.8841 12.2225 14.658C12.7685 14.4318 13.2646 14.1003 13.6825 13.6825C14.1003 13.2646 14.4318 12.7685 14.658 12.2225C14.8841 11.6765 15.0005 11.0913 15.0005 10.5003C15.0005 9.90934 14.8841 9.32415 14.658 8.77816C14.4318 8.23217 14.1003 7.73607 13.6825 7.31818C13.2646 6.9003 12.7685 6.56881 12.2225 6.34266C11.6765 6.1165 11.0913 6.0001 10.5003 6.0001C9.90934 6.0001 9.32415 6.1165 8.77816 6.34266C8.23217 6.56881 7.73607 6.9003 7.31818 7.31818C6.9003 7.73607 6.56881 8.23217 6.34266 8.77816C6.1165 9.32415 6.0001 9.90934 6.0001 10.5003C6.0001 11.0913 6.1165 11.6765 6.34266 12.2225C6.56881 12.7685 6.9003 13.2646 7.31818 13.6825C7.73607 14.1003 8.23217 14.4318 8.77816 14.658C9.32415 14.8841 9.90934 15.0005 10.5003 15.0005Z"
+                            fill="#F7F7FA" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="chitietvongdau">
+        <div class="content-container">
+            <div class="tabs-control">
+                <div class="tab active" onclick="chitietvongdau('xacnhanthamdu')">Xác nhận tham dự</div>
+                <div class="tab" onclick="chitietvongdau('trandau')">Trận đấu</div>
+                <div class="tab" onclick="chitietvongdau('bangxephangvong')">Bảng xếp hạng vòng</div>
+            </div>
+            <div class="tabs-content">
+                <div id="xacnhanthamdu" class="tabs-content-item">
+                    <div class="xacnhanthamdu">
+                        <div class="xacnhanthamdu-header">
+                            <!-- search -->
+                            <div class="input-field icon-left">
+                                <div class="input-container">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.0006 10.5003C17.0006 11.9348 16.535 13.2598 15.7506 14.3349L19.707 18.2944C20.0977 18.6851 20.0977 19.3195 19.707 19.7101C19.3164 20.1008 18.682 20.1008 18.2913 19.7101L14.3349 15.7506C13.2598 16.5381 11.9348 17.0006 10.5003 17.0006C6.90952 17.0006 4 14.0911 4 10.5003C4 6.90952 6.90952 4 10.5003 4C14.0911 4 17.0006 6.90952 17.0006 10.5003ZM10.5003 15.0005C11.0913 15.0005 11.6765 14.8841 12.2225 14.658C12.7685 14.4318 13.2646 14.1003 13.6825 13.6825C14.1003 13.2646 14.4318 12.7685 14.658 12.2225C14.8841 11.6765 15.0005 11.0913 15.0005 10.5003C15.0005 9.90934 14.8841 9.32415 14.658 8.77816C14.4318 8.23217 14.1003 7.73607 13.6825 7.31818C13.2646 6.9003 12.7685 6.56881 12.2225 6.34266C11.6765 6.1165 11.0913 6.0001 10.5003 6.0001C9.90934 6.0001 9.32415 6.1165 8.77816 6.34266C8.23217 6.56881 7.73607 6.9003 7.31818 7.31818C6.9003 7.73607 6.56881 8.23217 6.34266 8.77816C6.1165 9.32415 6.0001 9.90934 6.0001 10.5003C6.0001 11.0913 6.1165 11.6765 6.34266 12.2225C6.56881 12.7685 6.9003 13.2646 7.31818 13.6825C7.73607 14.1003 8.23217 14.4318 8.77816 14.658C9.32415 14.8841 9.90934 15.0005 10.5003 15.0005Z" fill="#33475F"/>
+                                            </svg>
+                                    </div>
+                                    <input type="text" placeholder="Nhập tên cầu thủ">
+                                </div>
+                            </div>
+                            <!-- Thêm cầu thủ -->
+                            <div class="action-gropup">
+                                <a class="button button-primary" href="themungvienmoi.html">Thêm</a>
+                            </div>
+                        </div>
+                        <div class="xacnhanthamdu-body">
+                            <div class="danhsachdoithamdu">
+                                <div class="doithamdu">
+                                    <div class="doithamdu-header">
+                                        <div class="infor">
+                                            <img src="../assets/images/Logo.png" alt="">
+                                            <h6>Eagle FC</h6>
+                                        </div>
+                                        <div class="value">
+                                            <p>Có mặt:</p>
+                                            <div class="number">
+                                                <span class="current invalid">1</span>
+                                                <div class="total">/24</div>
+                                            </div>
+                                            <div class="toggle">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="16" height="16" fill=""/>
+                                                    <path d="M7.53077 10.4721C7.79119 10.7325 8.2141 10.7325 8.47452 10.4721L12.4745 6.47207C12.7349 6.21165 12.7349 5.78874 12.4745 5.52832C12.2141 5.2679 11.7912 5.2679 11.5308 5.52832L8.0016 9.05749L4.47244 5.5304C4.21202 5.26999 3.7891 5.26999 3.52869 5.5304C3.26827 5.79082 3.26827 6.21374 3.52869 6.47415L7.52869 10.4742L7.53077 10.4721Z" fill="#ffffff"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="doithamdu-body">
+                                        <div class="danhsachcauthuthamdu">
+                                            <div class="cauthuthamdu">
+                                                <div class="img">
+                                                    <img src="../assets/images/avt_cauthu.png" alt="">
+                                                </div>
+                                                <div class="infor">
+                                                    <h6>Võ Nguyễn Anh Tuấn</h6>
+                                                    <p>Hậu vệ • Số áo: 8</p>
+                                                    <a href="#!" class="cancuoccongdan open-bottom-sheet-cccd">Thẻ căn cước</a>
+                                                </div>
+                                                <div class="checkbox checked">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" fill=""/>
+                                                        <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="cauthuthamdu">
+                                                <div class="img">
+                                                    <img src="../assets/images/avt_cauthu.png" alt="">
+                                                </div>
+                                                <div class="infor">
+                                                    <h6>Võ Nguyễn Anh Tuấn</h6>
+                                                    <p>Hậu vệ • Số áo: 8</p>
+                                                    <a href="#!" class="cancuoccongdan open-bottom-sheet-cccd">Thẻ căn cước</a>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" fill=""/>
+                                                        <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="cauthuthamdu">
+                                                <div class="img">
+                                                    <img src="../assets/images/avt_cauthu.png" alt="">
+                                                </div>
+                                                <div class="infor">
+                                                    <h6>Võ Nguyễn Anh Tuấn</h6>
+                                                    <p>Hậu vệ • Số áo: 8</p>
+                                                    <a href="#!" class="cancuoccongdan open-bottom-sheet-cccd">Thẻ căn cước</a>
+                                                </div>
+                                                <div class="checkbox ">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" fill=""/>
+                                                        <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doithamdu">
+                                    <div class="doithamdu-header">
+                                        <div class="infor">
+                                            <img src="../assets/images/Logo.png" alt="">
+                                            <h6>Eagle FC</h6>
+                                        </div>
+                                        <div class="value">
+                                            <p>Có mặt:</p>
+                                            <div class="number">
+                                                <span class="current invalid">1</span>
+                                                <div class="total">/24</div>
+                                            </div>
+                                            <div class="toggle">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="16" height="16" fill=""/>
+                                                    <path d="M7.53077 10.4721C7.79119 10.7325 8.2141 10.7325 8.47452 10.4721L12.4745 6.47207C12.7349 6.21165 12.7349 5.78874 12.4745 5.52832C12.2141 5.2679 11.7912 5.2679 11.5308 5.52832L8.0016 9.05749L4.47244 5.5304C4.21202 5.26999 3.7891 5.26999 3.52869 5.5304C3.26827 5.79082 3.26827 6.21374 3.52869 6.47415L7.52869 10.4742L7.53077 10.4721Z" fill="#ffffff"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="doithamdu-body">
+                                        <div class="danhsachcauthuthamdu">
+                                            <div class="cauthuthamdu">
+                                                <div class="img">
+                                                    <img src="../assets/images/avt_cauthu.png" alt="">
+                                                </div>
+                                                <div class="infor">
+                                                    <h6>Võ Nguyễn Anh Tuấn</h6>
+                                                    <p>Hậu vệ • Số áo: 8</p>
+                                                    <a href="#!" class="cancuoccongdan open-bottom-sheet-cccd">Thẻ căn cước</a>
+                                                </div>
+                                                <div class="checkbox checked">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" fill=""/>
+                                                        <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="cauthuthamdu">
+                                                <div class="img">
+                                                    <img src="../assets/images/avt_cauthu.png" alt="">
+                                                </div>
+                                                <div class="infor">
+                                                    <h6>Võ Nguyễn Anh Tuấn</h6>
+                                                    <p>Hậu vệ • Số áo: 8</p>
+                                                    <a href="#!" class="cancuoccongdan open-bottom-sheet-cccd">Thẻ căn cước</a>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" fill=""/>
+                                                        <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="cauthuthamdu">
+                                                <div class="img">
+                                                    <img src="../assets/images/avt_cauthu.png" alt="">
+                                                </div>
+                                                <div class="infor">
+                                                    <h6>Võ Nguyễn Anh Tuấn</h6>
+                                                    <p>Hậu vệ • Số áo: 8</p>
+                                                    <a href="#!" class="cancuoccongdan open-bottom-sheet-cccd">Thẻ căn cước</a>
+                                                </div>
+                                                <div class="checkbox ">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" fill=""/>
+                                                        <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div id="trandau" class="tabs-content-item" style="display: none;">
+                    <div class="danhsachtrandau">
+                        <a class="item" href="trandau.html">
+                            <label for="">
+                                Trận 1
+                            </label>
+                            <div class="trandau">
+                                <div class="doibong">
+                                    <div class="img">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                    </div>
+                                    <p>Eagle FC</p>
+                                </div>
+                                <div class="thongtin">
+                                    <div class="status chuabatdau">
+                                        <p>Chưa bắt đầu</p>
+                                    </div>
+                                    <div class="time">15/07/2023</div>
+                                    <div class="tiso">
+                                        <span>0</span>
+                                        <span>-</span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <div class="doibong">
+                                    <div class="img">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                    </div>
+                                    <p>Eagle FC</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="item" href="trandau.html">
+                            <label for="">
+                                Trận 2
+                            </label>
+                            <div class="trandau">
+                                <div class="doibong">
+                                    <div class="img">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                    </div>
+                                    <p>Eagle FC</p>
+                                </div>
+                                <div class="thongtin">
+                                    <div class="status chuabatdau">
+                                        <p>Chưa bắt đầu</p>
+                                    </div>
+                                    <div class="time">15/07/2023</div>
+                                    <div class="tiso">
+                                        <span>0</span>
+                                        <span>-</span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <div class="doibong">
+                                    <div class="img">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                    </div>
+                                    <p>Eagle FC</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="item" href="trandau.html">
+                            <label for="">
+                                Trận 3
+                            </label>
+                            <div class="trandau">
+                                <div class="doibong">
+                                    <div class="img">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                    </div>
+                                    <p>Eagle FC</p>
+                                </div>
+                                <div class="thongtin">
+                                    <div class="status chuabatdau">
+                                        <p>Chưa bắt đầu</p>
+                                    </div>
+                                    <div class="time">15/07/2023</div>
+                                    <div class="tiso">
+                                        <span>0</span>
+                                        <span>-</span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <div class="doibong">
+                                    <div class="img">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                    </div>
+                                    <p>Eagle FC</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="item" href="trandau.html">
+                            <label for="">
+                                Trận 4
+                            </label>
+                            <div class="trandau">
+                                <div class="doibong">
+                                    <div class="img">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                    </div>
+                                    <p>Eagle FC</p>
+                                </div>
+                                <div class="thongtin">
+                                    <div class="status chuabatdau">
+                                        <p>Chưa bắt đầu</p>
+                                    </div>
+                                    <div class="time">15/07/2023</div>
+                                    <div class="tiso">
+                                        <span>0</span>
+                                        <span>-</span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <div class="doibong">
+                                    <div class="img">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                    </div>
+                                    <p>Eagle FC</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+                <div id="bangxephangvong" class="tabs-content-item" style="display: none;">
+                    3
+                </div>   
+            </div>           
+        </div>
+    </div>
+     <!--  bottom-sheet -->
+     <div class="bottom-sheet-container">
+        <div class="overlay"></div>
+        <!-- bottom-sheet /Chỉnh sửa thông tin  -->
+        <div id="bottom-sheet-cccd" class="bottom-sheet">
+            <div class="control-step">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Thẻ căn cước</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <img src="../assets/images/cccd.png" alt="">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
+
+</html>

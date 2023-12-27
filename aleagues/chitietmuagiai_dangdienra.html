@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="mobile-only darkmode">
+    <!-- page header -->
+    <div class="page-header">
+        <h4>
+            <a href="#!">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.70229 11.3312C4.26284 11.7706 4.26284 12.4843 4.70229 12.9237L10.3273 18.5487C10.7667 18.9882 11.4804 18.9882 11.9199 18.5487C12.3593 18.1093 12.3593 17.3956 11.9199 16.9562L8.21089 13.2507L18.9968 13.2507C19.6191 13.2507 20.1218 12.7479 20.1218 12.1257C20.1218 11.5034 19.6191 11.0007 18.9968 11.0007L8.2144 11.0007L11.9164 7.29521C12.3558 6.85576 12.3558 6.14209 11.9164 5.70264C11.4769 5.26318 10.7632 5.26318 10.3238 5.70264L4.69878 11.3276L4.70229 11.3312Z"
+                        fill="#F7F7FA" />
+                </svg>
+            </a>
+            SK Leagues mùa 4
+        </h4>
+        <div class="function">
+            <a href="#!" class="function-search">
+                <div class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.0006 10.5003C17.0006 11.9348 16.535 13.2598 15.7506 14.3349L19.707 18.2944C20.0977 18.6851 20.0977 19.3195 19.707 19.7101C19.3164 20.1008 18.682 20.1008 18.2913 19.7101L14.3349 15.7506C13.2598 16.5381 11.9348 17.0006 10.5003 17.0006C6.90952 17.0006 4 14.0911 4 10.5003C4 6.90952 6.90952 4 10.5003 4C14.0911 4 17.0006 6.90952 17.0006 10.5003ZM10.5003 15.0005C11.0913 15.0005 11.6765 14.8841 12.2225 14.658C12.7685 14.4318 13.2646 14.1003 13.6825 13.6825C14.1003 13.2646 14.4318 12.7685 14.658 12.2225C14.8841 11.6765 15.0005 11.0913 15.0005 10.5003C15.0005 9.90934 14.8841 9.32415 14.658 8.77816C14.4318 8.23217 14.1003 7.73607 13.6825 7.31818C13.2646 6.9003 12.7685 6.56881 12.2225 6.34266C11.6765 6.1165 11.0913 6.0001 10.5003 6.0001C9.90934 6.0001 9.32415 6.1165 8.77816 6.34266C8.23217 6.56881 7.73607 6.9003 7.31818 7.31818C6.9003 7.73607 6.56881 8.23217 6.34266 8.77816C6.1165 9.32415 6.0001 9.90934 6.0001 10.5003C6.0001 11.0913 6.1165 11.6765 6.34266 12.2225C6.56881 12.7685 6.9003 13.2646 7.31818 13.6825C7.73607 14.1003 8.23217 14.4318 8.77816 14.658C9.32415 14.8841 9.90934 15.0005 10.5003 15.0005Z"
+                            fill="#F7F7FA" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Chi tiết Giải đấu -->
+    <div class="chitiet-muagiai">
+        <div class="container">
+            <!-- Thông tin chi tiết giải đấu -->
+            <div class="infor-list">
+                <div class="infor">
+                    <p class="label">
+                        Số đội tham gia
+                    </p>
+                    <div class="content">
+                        <span>4</span>
+                    </div>
+                </div>
+                <div class="infor">
+                    <p class="label">
+                        Số vòng đấu
+                    </p>
+                    <div class="content">
+                        <span>12</span>
+                    </div>
+                </div>
+                <div class="infor">
+                    <p class="label">
+                        Địa điểm tổ chức
+                    </p>
+                    <div class="content">
+                        <span>Bình Thạnh Sport Park</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="action-group">
+                <a class="button button-outline" href="#!">Chỉnh sửa thông tin</a>
+            </div>
+        </div>
+    </div>
+    <!-- Thông tin chi tiết -->
+    <div class="thongtin-chitiet-muagiai">
+       <div class="content-container">
+            <div class="tabs-control">
+                <div class="tab active" onclick="chitietmuagiai('thongtin')">Thông tin</div>
+                <div class="tab" onclick="chitietmuagiai('bangxephang')">Bảng xếp hạng</div>
+                <div class="tab" onclick="chitietmuagiai('bantochuc')">Ban tổ chức</div>
+                <div class="tab" onclick="chitietmuagiai('lichthidau')">Lịch thi đấu</div>
+            </div>
+            <div class="tabs-content">
+                <div id="thongtin" class="tabs-content-item">
+                    <div class="thongtinvong">
+                        <div class="thongtinvong-header">
+                            <h6>Vòng 1</h6>
+                            <a href="trandau.html">Xem diễn biến</a>
+                        </div>
+                        <div class="thongtinvong-body">
+                            <div class="trandau">
+                                <div class="doibong">
+                                    <div class="img">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                    </div>
+                                    <p>Eagle FC</p>
+                                </div>
+                                <div class="thongtin">
+                                    <div class="status dangdienra">
+                                        <p>Đang diễn ra</p>
+                                    </div>
+                                    <div class="time">15/07/2023</div>
+                                    <div class="tiso">
+                                        <span>0</span>
+                                        <span>-</span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <div class="doibong">
+                                    <div class="img">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                    </div>
+                                    <p>Eagle FC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="tintuc">
+                        <div class="tintuc-header">
+                            <h6>Tin tức giải đấu</h6>
+                            <a href="taotintuc.html">Tạo tin tức mới</a>
+                        </div>
+                        <div class="tintuc-body">
+                            <div class="danhsach">
+                                <a class="item" href="#!">
+                                    <div class="infor">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                        <p>A Leagues Admin • 06/08/2023</p>
+                                    </div>
+                                    <div class="img">
+                                        <img src="../assets/images/tintuic.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h6>ĐỪNG MONG CHÚNG TÔI TIẾT LỘ VỚI THẾ GIỚI ĐÂY LÀ AI</h6>
+                                        <p>Bị theo đuổi bởi sở hữu quá nhiều ưu điểm, từ lâu đã trở thành gánh nặng cho chàng. Thời gian quý báu...</p>
+                                    </div>
+                                </a>
+                                <a class="item" href="#!">
+                                    <div class="infor">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                        <p>A Leagues Admin • 06/08/2023</p>
+                                    </div>
+                                    <div class="img">
+                                        <img src="../assets/images/tintuic.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h6>ĐỪNG MONG CHÚNG TÔI TIẾT LỘ VỚI THẾ GIỚI ĐÂY LÀ AI</h6>
+                                        <p>Bị theo đuổi bởi sở hữu quá nhiều ưu điểm, từ lâu đã trở thành gánh nặng cho chàng. Thời gian quý báu...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="thuhangmua">
+                        <div class="thuhangmua-header">
+                            <h6>Thứ hạng mùa</h6>
+                        </div>
+                        <div class="thuhangmua-body">
+                            <div class="tabs-thuhangmua-control">
+                                <div class="tab-thuhangmua active" onclick="thuhangmua('ghiban')">Ghi bàn</div>
+                                <div class="tab-thuhangmua" onclick="thuhangmua('kientao')">Kiến tạo</div>
+                                <div class="tab-thuhangmua" onclick="thuhangmua('keypass')">Keypass</div>
+                                <div class="tab-thuhangmua" onclick="thuhangmua('cuuthua')">Cứu thua</div>
+                                <div class="tab-thuhangmua" onclick="thuhangmua('thevang')">Thẻ vàng</div>
+                            </div>
+                            <div class="tabs-thuhangmua-content">
+                                <div id="ghiban" class="tabs-thuhangmua-content-item">
+                                    <div class="thuhang">
+                                        <div class="item top1">
+                                            <img src="../assets/images/cauthu.png" alt="">
+                                            <div class="name">Anh Tuấn</div>
+                                            <div class="infor">Số 7 - WAF FC</div>
+                                            <div class="value"> 7 bàn</div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="../assets/images/cauthu.png" alt="">
+                                            <div class="name">Anh Tuấn</div>
+                                            <div class="infor">Số 7 - WAF FC</div>
+                                            <div class="value"> 7 bàn</div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="../assets/images/cauthu.png" alt="">
+                                            <div class="name">Anh Tuấn</div>
+                                            <div class="infor">Số 7 - WAF FC</div>
+                                            <div class="value"> 7 bàn</div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="../assets/images/cauthu.png" alt="">
+                                            <div class="name">Anh Tuấn</div>
+                                            <div class="infor">Số 7 - WAF FC</div>
+                                            <div class="value"> 7 bàn</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="kientao" class="tabs-thuhangmua-content-item" style="display:none">
+                                    2
+                                </div>
+                                <div id="keypass" class="tabs-thuhangmua-content-item"style="display:none">
+                                    3
+                                </div>
+                                <div id="cuuthua" class="tabs-thuhangmua-content-item" style="display:none">
+                                    4
+                                </div>
+                                <div id="thevang" class="tabs-thuhangmua-content-item"style="display:none">
+                                    5
+                                </div>
+                               
+                            </div>
+                        </div>
+                   </div>
+                </div>                 
+                <div id="bangxephang" class="tabs-content-item" style="display:none">
+                    <!-- Bảng xếp hạng mùa 21 -->
+                    <div class="bang">
+                        <div class="label">
+                            <h6>Bảng xếp hạng Mùa 21</h6>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_1.png" alt="">
+                                    <h6>Hạng 1</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_2.png" alt="">
+                                    <h6>Hạng 2</h6>
+                                </div>
+                                <div class="status down">
+                                    <img src="../assets/images/down.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangdoi">
+                            <div class="xephangdoi-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_3.png" alt="">
+                                    <h6>Hạng 3</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-body">
+                                <div class="thontindoibong">
+                                    <div class="img">
+                                        <img src="../assets/images/aleagues.png" alt="">
+                                    </div>
+                                    <h6>[Tên đội bóng]</h6>
+                                </div>
+                            </div>
+                            <div class="xephangdoi-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Điểm</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Trận</label>
+                                        <div class="value">6</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">T - H - B</label>
+                                        <div class="value">2 - 0 - 1</div>
+                                    </div>
+                                    <div class="chiso">
+                                        <label for="">Hiệu số</label>
+                                        <div class="value">+ 6</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="action-group">
+                            <a class="button button-outline" href="#!">
+                                <span>
+                                    Xem tất cả
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Bảng xếp hạng Bàn Thắng Mùa 21 -->
+                    <div class="bang">
+                        <div class="label">
+                            <h6>Bảng xếp hạng Bàn Thắng Mùa 21</h6>
+                        </div>
+                        <div class="xephangcauthu">
+                            <div class="xephangcauthu-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_1.png" alt="">
+                                    <h6>Hạng 1</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-body">
+                                <div class="thongtincauthu">
+                                    <div class="img">
+                                        <img src="../assets/images/avt_cauthu.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="type huanluyenvien">
+                                            Huấn luyện viên
+                                        </div>
+                                        <h6>Nguyễn Tuấn Linh</h6>
+                                        <p>Hậu vệ • Số áo: 8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Bàn thắng</label>
+                                        <div class="value">12</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangcauthu">
+                            <div class="xephangcauthu-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_2.png" alt="">
+                                    <h6>Hạng 2</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-body">
+                                <div class="thongtincauthu">
+                                    <div class="img">
+                                        <img src="../assets/images/avt_cauthu.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="type huanluyenvien">
+                                            Huấn luyện viên
+                                        </div>
+                                        <h6>Nguyễn Tuấn Linh</h6>
+                                        <p>Hậu vệ • Số áo: 8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Bàn thắng</label>
+                                        <div class="value">12</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="xephangcauthu">
+                            <div class="xephangcauthu-header">
+                                <div class="hang">
+                                    <img src="../assets/images/medal_3.png" alt="">
+                                    <h6>Hạng 3</h6>
+                                </div>
+                                <div class="status up">
+                                    <img src="../assets/images/up.png" alt="">
+                                    <p>1 hạng</p>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-body">
+                                <div class="thongtincauthu">
+                                    <div class="img">
+                                        <img src="../assets/images/avt_cauthu.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="type huanluyenvien">
+                                            Huấn luyện viên
+                                        </div>
+                                        <h6>Nguyễn Tuấn Linh</h6>
+                                        <p>Hậu vệ • Số áo: 8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xephangcauthu-footer">
+                               <div class="danhsach-chiso">
+                                    <div class="chiso">
+                                        <label for="">Bàn thắng</label>
+                                        <div class="value">12</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="action-group">
+                            <a class="button button-outline" href="#!">
+                                <span>
+                                    Xem tất cả
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="bantochuc" class="tabs-content-item" style="display:none">
+                    <!-- Thông tin ban tổ chức -->
+                    <div class="thongtin-bantochuc">
+                        <!-- item -->
+                        <div class="item">
+                            <div class="item-header">
+                                <p>TRƯỞNG BAN TỔ CHỨC</p>
+                                <div class="function">
+                                    <a href="#!" class="edit open-bottom-sheet-edit-bantochuc">Chỉnh sửa</a>
+                                </div>
+                            </div>
+                            <div class="item-body">
+                                <div class="infor-list">
+                                    <div class="infor">
+                                        <p class="label">Họ tên</p>
+                                        <p class="content">Trần Trung Hiếu</p>
+                                    </div>
+                                    <div class="infor">
+                                        <p class="label">Email</p>
+                                        <p class="content">trunghieu@aleagues.com</p>
+                                    </div>
+                                    <div class="infor">
+                                        <p class="label">Số điện thoại</p>
+                                        <p class="content">0123456789</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- item -->
+                         <div class="item">
+                            <div class="item-header">
+                                <p>TRỢ LÝ GIẢI</p>
+                                <div class="function">
+                                    <a href="#!" class="edit open-bottom-sheet-edit-bantochuc">Chỉnh sửa</a>
+                                </div>
+                            </div>
+                            <div class="item-body">
+                                <div class="infor-list">
+                                    <div class="infor">
+                                        <p class="label">Họ tên</p>
+                                        <p class="content">Trần Trung Hiếu</p>
+                                    </div>
+                                    <div class="infor">
+                                        <p class="label">Email</p>
+                                        <p class="content">trunghieu@aleagues.com</p>
+                                    </div>
+                                    <div class="infor">
+                                        <p class="label">Số điện thoại</p>
+                                        <p class="content">0123456789</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="lichthidau" class="tabs-content-item" style="display:none">
+                    <!-- Lịch thi đấu -->
+                    <div class="lichthidau">
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="item-header">
+                                <h6>Vòng 1</h6>
+                            </div>
+                            <div class="item-body">
+                                <div class="danhsach-thongtin">
+                                    <div class="thongtin-header">
+                                        <div class="thongtin">
+                                            <label for="">Thời gian bắt đầu</label>
+                                            <div class="value">
+                                                <p>24/08/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="thongtin">
+                                            <label for="">Trạng thái</label>
+                                            <div class="value">
+                                                <div class="tag hoanthanh">Hoàn thành</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thongtin-body">
+                                        <div class="content">
+                                            <p>🏆 Vô địch vòng</p>
+                                            <img src="../assets/images/cover-champion.png" alt="">
+                                        </div>
+                                        <div class="action-group">
+                                            <a class="button button-outline" href="chitietvongdau.html">
+                                                <span>
+                                                    Xem chi tiết
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                         <!-- Item -->
+                         <div class="item">
+                            <div class="item-header">
+                                <h6>Vòng 2</h6>
+                            </div>
+                            <div class="item-body">
+                                <div class="danhsach-thongtin">
+                                    <div class="thongtin-header">
+                                        <div class="thongtin">
+                                            <label for="">Thời gian bắt đầu</label>
+                                            <div class="value">
+                                                <p>24/08/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="thongtin">
+                                            <label for="">Trạng thái</label>
+                                            <div class="value">
+                                                <div class="tag dangdienra">Đang diễn ra</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thongtin-body">
+                                        <div class="progressBar">
+                                            <div class="value">9/12 trận</div>
+                                            <div class="progress">
+                                                <div class="current" style="width:0%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="action-group">
+                                            <a class="button button-outline" href="chitietvongdau.html">
+                                                <span>
+                                                    Xem chi tiết
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                         <!-- Item -->
+                         <div class="item">
+                            <div class="item-header">
+                                <h6>Vòng 3</h6>
+                            </div>
+                            <div class="item-body">
+                                <div class="danhsach-thongtin">
+                                    <div class="thongtin-header">
+                                        <div class="thongtin">
+                                            <label for="">Thời gian bắt đầu</label>
+                                            <div class="value">
+                                                <p>24/08/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="thongtin">
+                                            <label for="">Trạng thái</label>
+                                            <div class="value">
+                                                <div class="tag sapdienra">Sắp diễn ra</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thongtin-body">
+                                        <div class="progressBar">
+                                            <div class="value">0/12 trận</div>
+                                            <div class="progress">
+                                                <div class="current" style="width:0%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="action-group">
+                                            <a class="button button-outline" href="#!">
+                                                <span>
+                                                    Xem tất cả
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+      <!--  bottom-sheet -->
+      <div class="bottom-sheet-container">
+        <div class="overlay"></div>
+        
+        <!-- bottom-sheet /Chỉnh sửa thông tin  -->
+        <div id="bottom-sheet-edit-bantochuc" class="bottom-sheet">
+            <div class="control-step">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Chỉnh sửa thông tin</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <form action="" class="on-lightmode">
+                            <div class="input-field">
+                                <label for="">Họ tên</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập email của bạn" value="Nguyễn Thành Trung">
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label for="">Email</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập email của bạn" value="test@gmail.com">
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label for="">Số điện thoại</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập email của bạn" value="0123456789">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="action-gropup">
+                            <a class="button button-primary close-bottom-sheet">Xác nhận</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
+
+</html>

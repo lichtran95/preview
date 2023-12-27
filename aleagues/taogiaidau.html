@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="mobile-only darkmode">
+    <!-- page header -->
+    <!-- <div class="container"></div> để config padding -->
+    <div class="page-header">
+        <h4>
+            <a href="#!" onclick="window.history.go(-1); return false;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.70229 11.3312C4.26284 11.7706 4.26284 12.4843 4.70229 12.9237L10.3273 18.5487C10.7667 18.9882 11.4804 18.9882 11.9199 18.5487C12.3593 18.1093 12.3593 17.3956 11.9199 16.9562L8.21089 13.2507L18.9968 13.2507C19.6191 13.2507 20.1218 12.7479 20.1218 12.1257C20.1218 11.5034 19.6191 11.0007 18.9968 11.0007L8.2144 11.0007L11.9164 7.29521C12.3558 6.85576 12.3558 6.14209 11.9164 5.70264C11.4769 5.26318 10.7632 5.26318 10.3238 5.70264L4.69878 11.3276L4.70229 11.3312Z"
+                        fill="#F7F7FA" />
+                </svg>
+            </a>
+            Tạo giải đấu mới
+        </h4>
+       
+    </div>
+
+    <div class="taogiaidau">
+        <div class="container">
+            <div class="progressBar">
+                <div class="progress">
+                    <div class="current" style="width:25%;"></div>
+                </div>
+            </div>
+            <div class="step-group">
+                <!-- Tạo giải đấu : bước 1 -->
+                <div class="step step1">
+                    <div class="step-header">
+                        <h5>Bước 1: Thông tin giải đấu</h5>
+                    </div>
+                    <div class="step-body">
+                        <div class="upload">
+                            <div class="input-upload">
+                                <input name="input-upload" id="input-upload" type="file">
+                                <label for="input-upload">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4375 6.125C13.4375 5.50273 12.9348 5 12.3125 5C11.6902 5 11.1875 5.50273 11.1875 6.125V11.1875H6.125C5.50273 11.1875 5 11.6902 5 12.3125C5 12.9348 5.50273 13.4375 6.125 13.4375H11.1875V18.5C11.1875 19.1223 11.6902 19.625 12.3125 19.625C12.9348 19.625 13.4375 19.1223 13.4375 18.5V13.4375H18.5C19.1223 13.4375 19.625 12.9348 19.625 12.3125C19.625 11.6902 19.1223 11.1875 18.5 11.1875H13.4375V6.125Z" fill="#292A31"/>
+                                        </svg>
+                                    </div>
+                                    <p>Upload</p>
+                                </label>
+                            </div>
+                            <div class="label"> Logo giải đấu</div>
+                        </div>
+                        <form action="">
+                            <div class="input-field">
+                                <label for="">Tên giải đấu</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập tên giải đấu">
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label for="">Địa điểm tổ chức</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập Địa điểm tổ chức">
+                                </div>
+                            </div>
+                            <div class="input-field open-bottom-sheet-loaisan">
+                                <label for="">Loại sân</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Chọn loại sân">
+                                    <img src="../assets/icon/Chevron-down.svg" alt="">
+                                </div>
+                             
+                            </div>
+                        </form>
+                        <div class="action-group">
+                            <a class="button button-primary to-step2">Tiếp tục</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Tạo giải đấu : bước 2 -->
+                 <div class="step step2" style="display:none;">
+                    <div class="step-header">
+                        <h5>Bước 2: Đội bóng đăng ký tham dự</h5>
+                    </div>
+                    <div class="step-body">
+                        <a class="button button-dashed open-bottom-sheet-doibong">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.4375 6.125C13.4375 5.50273 12.9348 5 12.3125 5C11.6902 5 11.1875 5.50273 11.1875 6.125V11.1875H6.125C5.50273 11.1875 5 11.6902 5 12.3125C5 12.9348 5.50273 13.4375 6.125 13.4375H11.1875V18.5C11.1875 19.1223 11.6902 19.625 12.3125 19.625C12.9348 19.625 13.4375 19.1223 13.4375 18.5V13.4375H18.5C19.1223 13.4375 19.625 12.9348 19.625 12.3125C19.625 11.6902 19.1223 11.1875 18.5 11.1875H13.4375V6.125Z" fill="#3A3A44"/>
+                            </svg>
+                            Thêm đội bóng
+                        </a>
+                       <div class="danhsachdoibong">
+                          <!-- empty -->
+                            <div class="label"> Danh sách đội bóng (tối thiểu 4 đội)</div>
+                            <div class="empty-state">
+                                <img src="../assets/images/Empty.png" alt="">
+                                <p>Vui lòng chọn đội tham dự</p>
+                            </div>
+                            <!-- item đội bóng -->
+                            <div class="item">
+                                <div class="content">
+                                    <img src="../assets/images/Logo.png" alt="">
+                                    <p>Eagle</p>
+                                </div>
+                                <div class="function">
+                                    <div class="remove">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_200_60956)">
+                                            <path d="M8.82857 3.49249C9.02143 3.10321 9.41786 2.86035 9.85 2.86035H14.15C14.5821 2.86035 14.9786 3.10321 15.1714 3.49249L15.4286 4.00321H18.8571C19.4893 4.00321 20 4.51392 20 5.14607C20 5.77821 19.4893 6.28892 18.8571 6.28892H5.14286C4.51071 6.28892 4 5.77821 4 5.14607C4 4.51392 4.51071 4.00321 5.14286 4.00321H8.57143L8.82857 3.49249ZM5.14286 7.43178H18.8571V18.8604C18.8571 20.1211 17.8321 21.1461 16.5714 21.1461H7.42857C6.16786 21.1461 5.14286 20.1211 5.14286 18.8604V7.43178ZM8.57143 9.71749C8.25714 9.71749 8 9.97464 8 10.2889V18.2889C8 18.6032 8.25714 18.8604 8.57143 18.8604C8.88571 18.8604 9.14286 18.6032 9.14286 18.2889V10.2889C9.14286 9.97464 8.88571 9.71749 8.57143 9.71749ZM12 9.71749C11.6857 9.71749 11.4286 9.97464 11.4286 10.2889V18.2889C11.4286 18.6032 11.6857 18.8604 12 18.8604C12.3143 18.8604 12.5714 18.6032 12.5714 18.2889V10.2889C12.5714 9.97464 12.3143 9.71749 12 9.71749ZM15.4286 9.71749C15.1143 9.71749 14.8571 9.97464 14.8571 10.2889V18.2889C14.8571 18.6032 15.1143 18.8604 15.4286 18.8604C15.7429 18.8604 16 18.6032 16 18.2889V10.2889C16 9.97464 15.7429 9.71749 15.4286 9.71749Z" fill="#F7F7FA"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_200_60956">
+                                            <rect width="16" height="18.2857" fill="white" transform="translate(4 2.86035)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item đội bóng -->
+                            <div class="item">
+                                <div class="content">
+                                    <img src="../assets/images/Logo.png" alt="">
+                                    <p>Eagle</p>
+                                </div>
+                                <div class="function">
+                                    <div class="remove">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_200_60956)">
+                                            <path d="M8.82857 3.49249C9.02143 3.10321 9.41786 2.86035 9.85 2.86035H14.15C14.5821 2.86035 14.9786 3.10321 15.1714 3.49249L15.4286 4.00321H18.8571C19.4893 4.00321 20 4.51392 20 5.14607C20 5.77821 19.4893 6.28892 18.8571 6.28892H5.14286C4.51071 6.28892 4 5.77821 4 5.14607C4 4.51392 4.51071 4.00321 5.14286 4.00321H8.57143L8.82857 3.49249ZM5.14286 7.43178H18.8571V18.8604C18.8571 20.1211 17.8321 21.1461 16.5714 21.1461H7.42857C6.16786 21.1461 5.14286 20.1211 5.14286 18.8604V7.43178ZM8.57143 9.71749C8.25714 9.71749 8 9.97464 8 10.2889V18.2889C8 18.6032 8.25714 18.8604 8.57143 18.8604C8.88571 18.8604 9.14286 18.6032 9.14286 18.2889V10.2889C9.14286 9.97464 8.88571 9.71749 8.57143 9.71749ZM12 9.71749C11.6857 9.71749 11.4286 9.97464 11.4286 10.2889V18.2889C11.4286 18.6032 11.6857 18.8604 12 18.8604C12.3143 18.8604 12.5714 18.6032 12.5714 18.2889V10.2889C12.5714 9.97464 12.3143 9.71749 12 9.71749ZM15.4286 9.71749C15.1143 9.71749 14.8571 9.97464 14.8571 10.2889V18.2889C14.8571 18.6032 15.1143 18.8604 15.4286 18.8604C15.7429 18.8604 16 18.6032 16 18.2889V10.2889C16 9.97464 15.7429 9.71749 15.4286 9.71749Z" fill="#F7F7FA"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_200_60956">
+                                            <rect width="16" height="18.2857" fill="white" transform="translate(4 2.86035)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                        <div class="action-group">
+                            <a href="#!" class="button button-primary to-step3">Tiếp tục</a>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Tạo giải đấu : bước 3 -->
+                  <div class="step step3" style="display:none;">
+                    <div class="step-header">
+                        <h5>Bước 3: Thông tin nhà tài trợ</h5>
+                    </div>
+                    <div class="step-body">
+                        <div class="upload">
+                            <div class="input-upload">
+                                <input name="input-upload" id="input-upload" type="file">
+                                <label for="input-upload">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4375 6.125C13.4375 5.50273 12.9348 5 12.3125 5C11.6902 5 11.1875 5.50273 11.1875 6.125V11.1875H6.125C5.50273 11.1875 5 11.6902 5 12.3125C5 12.9348 5.50273 13.4375 6.125 13.4375H11.1875V18.5C11.1875 19.1223 11.6902 19.625 12.3125 19.625C12.9348 19.625 13.4375 19.1223 13.4375 18.5V13.4375H18.5C19.1223 13.4375 19.625 12.9348 19.625 12.3125C19.625 11.6902 19.1223 11.1875 18.5 11.1875H13.4375V6.125Z" fill="#292A31"/>
+                                        </svg>
+                                    </div>
+                                    <p>Upload</p>
+                                </label>
+                            </div>
+                            <div class="label"> Logo Nhà tài trợ</div>
+                        </div>
+                        <form action="post">
+                            <div class="input-field">
+                                <label for="">Tên tên nhà tài trợ</label>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nhập tên nhà tài trợ">
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label for="">Mô tả</label>
+                                <div class="textarea-container">
+                                    <textarea type="text" placeholder="Nhập mô tả"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="action-group">
+                            <a href="#!" class="button button-primary to-step4">Tiếp tục</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tạo giải đấu : bước 3 -->
+                <div class="step step4" style="display:none;">
+                    <div class="step-header">
+                        <h5>Bước 4: Điều lệ giải</h5>
+                    </div>
+                    <div class="step-body">
+                        <form action="">
+                            <div class="input-field">
+                                <label for="">Điều lệ giải</label>
+                                <div class="textarea-container">
+                                    <textarea type="text" placeholder="Nhập nội dung điều lệ giải"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="action-group">
+                            <a href="#!" class="button button-primary to-final-step">Xác nhận</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  bottom-sheet -->
+    <div class="bottom-sheet-container">
+        <div class="overlay"></div>
+        <!-- bottom-sheet / Loại sân -->
+        <div id="bottom-sheet-loaisan" class="bottom-sheet">
+            <div class="control-step">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Loại sân</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <div class="single-selection">
+                            <div class="item">
+                                <input name="single-choice" id="single-choice" type="radio">
+                                <label for="single-choice">
+                                    <p>Sân 5</p>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="white"/>
+                                            <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <input name="single-choice2" id="single-choice2" type="radio">
+                                <label for="single-choice2">
+                                    <p>Sân 7</p>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="white"/>
+                                            <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <input name="single-choice2" id="single-choice2" type="radio">
+                                <label for="single-choice2">
+                                    <p>Sân 11</p>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="white"/>
+                                            <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <!-- end -->
+        
+        <!-- bottom-sheet /Chọn đội bóng -->
+        <div id="bottom-sheet-doibong" class="bottom-sheet">
+            <div class="control-step">
+                <div class="heading-bottom-sheet">
+                    <div class="close close-bottom-sheet">
+                        <img src="../assets/icon/Close.svg" alt="">
+                    </div>
+                    <h5>Chọn đội bóng</h5>
+                </div>
+                <div class="body-bottom-sheet">
+                    <div class="body-content-1">
+                        <div class="multi-selection">
+                            <div class="item">
+                                <input name="multi-choice1" id="multi-choice1" type="checkbox">
+                                <label for="multi-choice1">
+                                    <div class="content">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                        <p>WAF FC</p>
+                                    </div>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="white"/>
+                                            <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <input name="multi-choice2" id="multi-choice2" type="checkbox">
+                                <label for="multi-choice2">
+                                    <div class="content">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                        <p>WAF FC</p>
+                                    </div>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="white"/>
+                                            <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <input name="multi-choice3" id="multi-choice3" type="checkbox">
+                                <label for="multi-choice3">
+                                    <div class="content">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                        <p>WAF FC</p>
+                                    </div>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="white"/>
+                                            <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <input name="multi-choice4" id="multi-choice4" type="checkbox">
+                                <label for="multi-choice4">
+                                    <div class="content">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                        <p>WAF FC</p>
+                                    </div>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="white"/>
+                                            <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <input name="multi-choice5" id="multi-choice5" type="checkbox">
+                                <label for="multi-choice5">
+                                    <div class="content">
+                                        <img src="../assets/images/Logo.png" alt="">
+                                        <p>WAF FC</p>
+                                    </div>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="white"/>
+                                            <path d="M19.667 6.33482C20.1134 6.78125 20.1134 7.50625 19.667 7.95268L10.5241 17.0955C10.0777 17.542 9.35268 17.542 8.90625 17.0955L4.33482 12.5241C3.88839 12.0777 3.88839 11.3527 4.33482 10.9062C4.78125 10.4598 5.50625 10.4598 5.95268 10.9062L9.71696 14.667L18.0527 6.33482C18.4991 5.88839 19.2241 5.88839 19.6705 6.33482H19.667Z" fill="#F15B2E"/>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="action-gropup">
+                            <a class="button button-primary close-bottom-sheet">Xác nhận</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+
+    <!--  Popup -->
+    <div id="popup-success" class="popup-container">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <div class="img">
+                <img src="../assets/images/success.png" alt="">
+            </div>
+            <div class="content">
+                <h5>Giải đấu SK Leagues 23 được tạo thành công </h5>
+                <p>Giờ đây bạn có thể tạo mùa giải cho giải đấu và cập nhật các thông tin mới cho giải đấu.</p>
+            </div>
+            <div class="action-group">
+                <a href="chitietgiaidau.html" class="button button-primary">Xem chi tiết giải đấu</a>
+                <a href="giaidau.html" class="button button-outline">Về trang chủ</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
+
+</html>

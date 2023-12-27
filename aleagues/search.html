@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="mobile-only darkmode">
+    <!-- page header -->
+    <!-- <div class="container"></div> để config padding -->
+    <div class="page-header for-search">
+        <div class="search-group">
+            <div class="input-field">
+                <div class="input-container">
+                    <input type="text" placeholder="Nhập tên giải đấu">
+                </div>
+            </div>
+            <a href="#!" onclick="window.history.go(-1); return false;" class="button button-text"> Hủy bỏ</a>
+        </div>
+    </div>
+    <div class="ketquatimkiem">
+        <div class="container">
+            <div class="danhsachketquatimkiem">
+                <label for="">Kết quả tìm kiếm</label>
+                <div class="danhsachthanhvien">
+                    <div class="body">
+                        <a class="cauthu" href="hosocauthu.html">
+                            <div class="thongtincauthu">
+                                <div class="img">
+                                    <img src="../assets/images/avt_cauthu.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="type huanluyenvien">
+                                        Huấn luyện viên
+                                    </div>
+                                    <h6>[Tên cầu thủ]</h6>
+                                    <p>Hậu vệ • Số áo: 8</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <!--  Popup -->
+    <div id="popup-success" class="popup-container">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <div class="img">
+                <img src="../assets/images/success.png" alt="">
+            </div>
+            <div class="content">
+                <h5>Thêm cầu thủ mới <br>
+                    vào Đội Một thành công</h5>
+            </div>
+            <div class="action-group">
+                <a href="#!" class="button button-primary">Xem hồ sơ cầu thủ</a>
+                <a href="#!" class="button button-outline">Quay về chi tiết đội bóng</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
+
+</html>
